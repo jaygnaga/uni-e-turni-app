@@ -194,6 +194,20 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden)cloudRefre
 window.addEventListener('online',()=>{if(dirty)writeCloud();else cloudRefresh()});
 async function boot(){
  try{
+  // Confirmation emails may redirect back with a short-lived session in the URL.
+  const fragment=new URLSearchParams(location.hash.startsWith('#')?location.hash.slice(1):'');
+  if(fragment.get('error_description')||fragment.get('error')){
+   msg('Conferma email non riuscita: '+(fragment.get('error_description')||fragment.get('error')));
+   history.replaceState(null,'',location.pathname+location.search);
+  }
+  if(fragment.get('access_token')&&fragment.get('refresh_token')){
+   const access_token=fragment.get('access_token'),refresh_token=fragment.get('refresh_token');
+   history.replaceState(null,'',location.pathname+location.search);
+   const account=await req('/auth/v1/user','GET',null,access_token);
+   if(!account?.id)throw new Error('Impossibile verificare la sessione');
+   await startUser({access_token,refresh_token,user:account,expires_at:Date.now()+(Number(fragment.get('expires_in'))||3600)*1000});
+   return;
+  }
   const persisted=JSON.parse(localStorage.getItem(AUTH_KEY)||'null');
   if(persisted?.access_token&&persisted?.refresh_token&&persisted?.user?.id){
    await startUser(persisted);
