@@ -1,0 +1,2026 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f7fc"><meta name="color-scheme" content="light"><meta name="description" content="Calendario università, turni, esami e presenze — Uni & Turni"><link rel="manifest" href="../manifest.webmanifest"><title>Uni & Turni · Calendario privato</title><style>:root{--bg:#f5f7fc;--surface:#fff;--surface2:#f1f5fb;--ink:#142139;--muted:#61708b;--line:#e2e8f2;--blue:#3f65dc;--pink:#c340aa;--amber:#d67d24;--teal:#187c84;--red:#c43e5d;--green:#138260;--shadow:0 10px 32px rgba(31,48,97,.055);--r:18px;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{background:var(--bg);margin:0;font-size:14px;line-height:1.45}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #83a2ff;outline-offset:2px}a{color:var(--blue)}h1,h2,h3,p{margin:0}h1{font-size:26px;letter-spacing:-.75px}h2{font-size:18px;letter-spacing:-.4px}h3{font-size:15px}.muted{color:var(--muted)}.xs{font-size:11px}.small{font-size:12px}.strong{font-weight:700}.app{min-height:100vh;display:grid;grid-template-columns:232px 1fr}.sidebar{position:sticky;top:0;height:100vh;background:#fff;border-right:1px solid var(--line);padding:27px 16px;display:flex;flex-direction:column;gap:25px}.logo{display:flex;align-items:center;gap:11px;padding:0 9px}.logo-mark{width:41px;height:41px;background:linear-gradient(138deg,#395ee3,#803cb5);color:white;border-radius:14px;display:grid;place-items:center;font-weight:850;font-size:21px;box-shadow:0 10px 20px #3e5ed324}.logo .name{font-weight:800;font-size:17px;letter-spacing:-.55px}.logo .caption{font-size:11px;color:var(--muted)}.nav{display:flex;flex-direction:column;gap:6px}.nav-btn{display:flex;align-items:center;gap:12px;width:100%;border:0;background:transparent;padding:12px 13px;border-radius:12px;color:#66748b;font-weight:650;text-align:left}.nav-btn:hover{background:#f5f7ff}.nav-btn.active{background:#edf0ff;color:#324db9}.nav-btn .sym{width:22px;text-align:center;font-size:18px}.sidebar-foot{margin-top:auto;border-radius:14px;padding:13px;background:#f5f7fc;border:1px solid #eef1f7}.sidebar-foot strong{display:block;font-size:12px}.sidebar-foot p{font-size:11px;color:var(--muted);margin-top:6px}.main{width:100%;max-width:1580px;margin:0 auto;padding:26px 34px 85px;min-width:0}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:27px}.eyebrow{font-weight:750;font-size:11px;color:#7184a3;text-transform:uppercase;letter-spacing:1.1px;margin-bottom:4px}.topactions{display:flex;align-items:center;gap:8px}.chip,.pill{border-radius:999px;padding:5px 10px;background:#f3f5fb;color:var(--muted);font-weight:650;font-size:11px;border:1px solid var(--line);white-space:nowrap}.chip.ok{background:#ecfbf5;color:#128163;border-color:#c8f0df}.chip.warn{background:#fff6e7;color:#986320;border-color:#ffe8bb}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #dce3f1;background:white;color:#354361;border-radius:11px;font-weight:750;padding:10px 13px;min-height:40px;transition:transform .13s,border .13s;white-space:nowrap}.btn:hover{border-color:#aebdec;transform:translateY(-1px)}.btn.primary{background:#415ed5;color:white;border-color:#415ed5;box-shadow:0 7px 14px #415ed52b}.btn.ghost{background:transparent;border-color:transparent}.btn.danger{color:#bd3454;border-color:#f0cbd3}.btn.sm{min-height:32px;padding:6px 9px;font-size:12px;border-radius:9px}.btn.icon{width:38px;height:38px;padding:0}.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:21px}.section{margin-top:25px}.section-title{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:13px}.section-title h2{font-weight:800}.welcome{background:linear-gradient(111deg,#263f9e,#5c55bc);color:white;border-radius:23px;padding:26px 30px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 12px 28px #3c4fbe24}.welcome h2{font-size:23px;letter-spacing:-.7px;margin:5px 0}.welcome p{color:#dce3ff;max-width:560px;font-size:13px}.welcome .orb{font-size:60px;opacity:.6;line-height:1}.stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:17px}.stat{min-height:123px;display:flex;flex-direction:column;gap:8px;justify-content:center}.stat .stat-icon{font-size:19px}.stat .num{font-size:28px;font-weight:850;letter-spacing:-.75px;line-height:1}.stat .name{font-size:11px;font-weight:750;color:#6b7c97}.twocol{display:grid;grid-template-columns:minmax(0,1.48fr) minmax(265px,1fr);gap:17px}.tiny-event{display:flex;align-items:flex-start;gap:11px;padding:12px 0;border-bottom:1px solid #ecf0f6}.tiny-event:last-child{border-bottom:0;padding-bottom:0}.time-block{width:61px;flex-shrink:0;text-align:center;background:#f4f7fc;border-radius:9px;padding:7px 4px;color:#5c6b85}.time-block b{display:block;color:var(--ink);font-size:12px}.time-block span{font-size:10px}.tiny-event .tinfo{min-width:0;flex:1}.tiny-event .tinfo strong{display:block;font-size:12px;line-height:1.35}.tiny-event .tinfo p{font-size:11px;color:var(--muted);margin-top:3px}.dot{width:9px;height:9px;display:inline-block;border-radius:3px;margin-right:6px;background:#999}.dot.mandatory{background:var(--blue)}.dot.elective{background:var(--pink)}.dot.exam{background:var(--amber)}.dot.shift{background:var(--teal)}.dot.custom{background:#69768d}.tag{font-size:10px;font-weight:750;padding:3px 7px;border-radius:6px;display:inline-block}.tag.mandatory{background:#eaf0ff;color:var(--blue)}.tag.elective{background:#f9e9f7;color:#a12e90}.tag.exam{background:#fff0dd;color:#a46516}.tag.shift{background:#e3f8f7;color:#13737a}.tag.custom{background:#f0f1f4;color:#58667c}.tag.danger{background:#ffeaed;color:#b83551}.tag.good{background:#e9f8f1;color:#147957}.tag.pending{background:#f4f6f9;color:#6c7c96}.notice{border:1px solid #fee2b4;background:#fffaf0;padding:13px 15px;border-radius:13px;color:#91602a;font-size:12px}.notice strong{display:block;color:#80501d;margin-bottom:5px}.list-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #edf0f5}.list-row:last-child{border-bottom:0}.list-row .left{min-width:0}.list-row .left strong{font-size:12px;display:block}.list-row .left small{font-size:11px;color:var(--muted)}.toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:15px}.month-title{min-width:205px;font-size:19px;font-weight:850;letter-spacing:-.5px}.month-arrows{display:flex;align-items:center;gap:7px}.segmented{display:flex;align-items:center;border:1px solid #e0e6f0;border-radius:11px;background:#f3f6fb;padding:3px;gap:2px}.segmented button{border:0;background:transparent;color:#6c7890;font-size:12px;font-weight:700;padding:7px 12px;border-radius:8px}.segmented button.active{background:white;color:#304dbe;box-shadow:0 2px 6px #233f7e15}.filter-row{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-bottom:13px}.filter-btn{border-radius:999px;background:white;color:#65738b;border:1px solid #e1e7f0;font-size:11px;padding:7px 11px;font-weight:700}.filter-btn.off{opacity:.45;text-decoration:line-through}.calendar{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border:1px solid var(--line);border-radius:16px;overflow:hidden;background:white}.cal-dow{font-size:11px;font-weight:800;color:#74829a;text-align:center;padding:11px;background:#f6f8fc;border-bottom:1px solid var(--line)}.cal-day{min-width:0;min-height:118px;padding:8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;cursor:pointer}.cal-day:nth-child(7n){border-right:0}.cal-day.faded{background:#f9fafe;color:#a0a8bc}.cal-day.selected{background:#f2f5ff;box-shadow:inset 0 0 0 2px #7794ef}.cal-day.today .daynum{background:#475fd4;color:white;border-radius:8px}.daynum{font-size:12px;font-weight:800;width:25px;height:25px;display:grid;place-items:center}.cal-event{display:block;width:100%;border:0;border-left:3px solid transparent;background:#f1f5fc;color:#31415e;border-radius:5px;margin-top:4px;padding:4px 5px;font-size:10px;line-height:1.2;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.cal-event.mandatory{border-left-color:var(--blue);background:#edf1ff;color:#3756b5}.cal-event.elective{border-left-color:var(--pink);background:#fdeefa;color:#9b377f}.cal-event.exam{border-left-color:var(--amber);background:#fff0db;color:#94621e}.cal-event.shift{border-left-color:var(--teal);background:#e4f6f4;color:#146d75}.cal-event.simulated{border-left-style:dashed;opacity:.75}.cal-event.custom{border-left-color:#717a8b}.cal-more{color:#62728b;font-size:10px;font-weight:750;margin-top:5px}.cal-selected{margin-top:15px}.event-card{display:flex;align-items:center;gap:12px;background:white;border:1px solid #e4e9f2;border-radius:12px;padding:12px 13px;margin-bottom:8px}.event-card .color-line{width:4px;border-radius:8px;align-self:stretch;background:var(--blue);flex-shrink:0}.event-card.elective .color-line{background:var(--pink)}.event-card.exam .color-line{background:var(--amber)}.event-card.shift .color-line{background:var(--teal)}.event-card.custom .color-line{background:#818c9e}.event-card strong{font-size:12px;display:block}.event-card p{font-size:11px;color:var(--muted)}.event-card .event-body{flex:1;min-width:0}.event-card .event-time{color:#596984;font-size:12px;min-width:77px;font-weight:750}.event-card .quick{display:flex;gap:5px;align-items:center}.mini-status{border:1px solid #e1e6ef;border-radius:8px;background:#fff;color:#60718d;padding:5px 7px;font-size:10px;font-weight:700}.mini-status.present{background:#e3f7ed;color:#14805a}.mini-status.absent{background:#ffedf0;color:#b8485b}.mini-status.unknown{background:#f3f5f9;color:#657389}.agenda-group{padding-bottom:14px}.agenda-group h3{margin:12px 0}.week-cards{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}.week-col{border:1px solid var(--line);border-radius:13px;padding:8px;background:#fff;min-height:220px}.week-col.sel{border-color:#7894e5;background:#f8f9ff}.week-col h3{font-size:11px;margin-bottom:9px;text-align:center}.week-entry{font-size:11px;padding:7px 6px;border-radius:7px;margin:6px 0;background:#f1f5fc;cursor:pointer}.week-entry.mandatory{background:#eaf0ff}.week-entry.elective{background:#fbe9f8}.week-entry.exam{background:#fff0df}.week-entry.shift{background:#e3f6f4}.course-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.course{padding:17px}.course header{display:flex;justify-content:space-between;align-items:flex-start;gap:7px}.course header h3{font-size:14px;line-height:1.4}.course .course-code{color:var(--muted);font-size:11px}.course-meta{margin-top:8px;display:flex;gap:8px;flex-wrap:wrap}.progress{width:100%;height:8px;border-radius:99px;background:#eef1f7;overflow:hidden;display:flex;margin:13px 0 7px}.progress .done{height:100%;background:var(--green)}.progress .missed{height:100%;background:var(--red)}.progress .pending{height:100%;background:#dfe7f6}.progress .partial{height:100%;background:#90c7b6}.course .cinfo{display:flex;justify-content:space-between;gap:8px;font-size:11px;color:var(--muted)}.module-detail{background:#f7f9fc;border-radius:11px;padding:10px 11px;margin-top:11px;font-size:11px}.module-detail .md-title{font-weight:800}.module-detail .md-item{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:5px 0}.module-detail .md-item:not(:last-child){border-bottom:1px solid #e8edf5}.module-detail button{border:0;background:transparent;color:var(--blue);font-size:11px;font-weight:700}.exam-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.exam-card{position:relative;overflow:hidden}.exam-card:before{content:"";width:5px;position:absolute;top:0;left:0;bottom:0;background:var(--amber)}.exam-date{display:flex;align-items:center;gap:14px;margin-bottom:14px}.datebox{display:flex;align-items:center;justify-content:center;flex-direction:column;min-width:62px;height:66px;background:#fff5e6;border-radius:13px;color:#9d661b}.datebox strong{font-size:27px;line-height:1}.datebox span{font-size:10px;font-weight:800;text-transform:uppercase}.exam-detail{display:grid;gap:9px;margin:14px 0;font-size:12px}.exam-detail b{color:#4a5972}.shift-legend{display:flex;gap:7px;flex-wrap:wrap}.shift-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px}.shift-box{background:#fff;border:1px solid #e1e6ef;border-radius:12px;min-height:83px;padding:9px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;text-align:left}.shift-box.empty{visibility:hidden}.shift-box.past{background:#fafbfd}.shift-box strong{font-size:12px}.shift-code{font-size:15px;font-weight:850;border-radius:8px;background:#e7f5f4;color:#117f7e;padding:5px 8px;min-width:32px;text-align:center}.shift-box.projection .shift-code{background:#eff4f6;color:#78909d;border:1px dashed #aabac9}.shift-box.confirmed .shift-code{background:#d9f9ed;color:#057b52}.shift-box .small{font-size:10px}.setting-rows{display:grid;gap:12px}.setting-item{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px;border:1px solid var(--line);background:#fff;border-radius:13px}.setting-item p{font-size:11px;color:var(--muted);margin-top:3px}.switch{position:relative;width:42px;height:25px;background:#cbd5e1;border-radius:99px;transition:background .2s;flex-shrink:0;border:0}.switch.on{background:var(--blue)}.switch:after{content:"";position:absolute;left:3px;top:3px;background:white;width:19px;height:19px;border-radius:50%;transition:transform .2s;box-shadow:0 2px 5px #0002}.switch.on:after{transform:translateX(17px)}.empty-state{padding:36px 17px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:13px;background:#fff}.empty-state .empty-emoji{font-size:34px;margin-bottom:8px}.modal-wrap{position:fixed;inset:0;background:#17223899;z-index:1000;display:flex;justify-content:center;align-items:center;padding:15px}.modal{background:white;border-radius:19px;width:min(650px,100%);max-height:calc(100vh - 30px);overflow:auto;padding:25px;box-shadow:0 22px 75px #14203345}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px;gap:10px}.modal-head h2{font-size:18px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#55657f}.field input,.field select,.field textarea{background:#fbfcfe;border:1px solid #dce4ef;border-radius:10px;min-height:40px;padding:10px;color:#273550;outline:none;width:100%}.field textarea{resize:vertical;min-height:65px}.field input:focus,.field select:focus,.field textarea:focus{border-color:#7091ed;box-shadow:0 0 0 3px #7fa1ff20}.modal-foot{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap;margin-top:15px;border-top:1px solid #ebeff6;padding-top:16px}.hide{display:none!important}.toast{position:fixed;right:24px;bottom:22px;z-index:2000;background:#1e2f52;color:white;border-radius:12px;padding:12px 17px;font-weight:750;box-shadow:0 14px 35px #1e2f5240;max-width:380px}.mobile-nav{display:none}details>summary{cursor:pointer;list-style:none;font-weight:750}details>summary::-webkit-details-marker{display:none}.status-bullet{border-radius:6px;padding:3px 7px;font-size:10px;font-weight:750;background:#f1f5f9;color:#66768d}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.heading-block{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.banner{padding:13px;border-radius:13px;background:#edf3ff;color:#334c90;font-size:12px}.danger-strip{background:#fff2f1;border:1px solid #ffe0de;color:#a8463e;padding:12px;border-radius:12px;font-size:12px}.footnote{font-size:11px;color:#7c89a0;margin-top:14px}#view{animation:in .13s ease-out}@keyframes in{from{opacity:.7;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1130px){.main{padding:22px 22px 90px}.stat-grid{grid-template-columns:repeat(2,1fr)}.twocol{grid-template-columns:1fr}.course-list{grid-template-columns:1fr}.cal-day{min-height:94px;padding:5px}.cal-event{font-size:9px}}@media(max-width:780px){.app{display:block}.sidebar{display:none}.main{padding:20px 13px 100px}.topbar{align-items:flex-start}.topbar h1{font-size:23px}.topactions .chip{display:none}.welcome{padding:22px}.welcome .orb{display:none}.stat-grid{gap:9px}.stat{padding:15px;min-height:106px}.stat .num{font-size:24px}.card{padding:16px}.mobile-nav{display:grid;position:fixed;bottom:0;left:0;right:0;z-index:100;grid-template-columns:repeat(6,1fr);background:#ffffffef;backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:8px 4px calc(8px + env(safe-area-inset-bottom))}.mobile-nav button{border:0;background:transparent;color:#75819a;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;font-size:9px;font-weight:750;min-width:0}.mobile-nav button span:first-child{font-size:19px}.mobile-nav button.active{color:var(--blue)}.cal-day{min-height:72px;padding:3px}.daynum{width:20px;height:20px;font-size:11px}.cal-event{font-size:0;height:7px;width:13px;padding:0;display:inline-block;vertical-align:middle;margin:3px 2px 0 0;border-radius:3px}.cal-more{font-size:9px;display:block;margin:0}.cal-dow{padding:9px 0}.event-card{flex-wrap:wrap;gap:7px;padding:10px}.event-card .event-body{flex-basis:calc(100% - 110px)}.event-card .quick{margin-left:auto}.week-cards{display:block}.week-col{min-height:unset;margin:7px 0}.week-col h3{text-align:left}.week-entry{display:inline-block;margin-right:5px}.exam-grid{grid-template-columns:1fr}.shift-grid{gap:5px}.shift-box{padding:6px;min-height:67px}.shift-box .small{display:none}.shift-code{font-size:12px;padding:4px 5px}.form-grid{grid-template-columns:1fr}.modal{padding:18px}.toolbar{gap:9px}.month-title{min-width:155px;font-size:17px}.filter-row{gap:4px}.filter-btn{padding:6px 8px;font-size:10px}.mobile-hidden{display:none!important}}@media(max-width:390px){.main{padding-left:9px;padding-right:9px}.btn{padding:8px 9px}.stat .num{font-size:21px}.event-card .event-time{min-width:65px}.calendar .cal-day{min-height:66px}}
+
+/* Conflitti, selezione modulo e marcatori di calendario */
+.daynum{position:relative}.conflict-indicator{position:absolute;left:19px;top:-4px;font-size:9px;background:#d53d56;color:#fff;border:1px solid white;line-height:13px;width:13px;height:13px;border-radius:50%;text-align:center}.module-select{margin-left:auto;border-radius:999px;border:1px solid #e0e6f0;background:white;color:#5d6b83;font-size:11px;font-weight:700;min-height:31px;padding:6px 10px;max-width:260px}.conflict-pair{display:grid;grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr) auto;align-items:center;gap:11px;border-top:1px solid var(--line);padding:13px 0;font-size:12px}.clash-mark{font-size:17px;color:var(--red);font-weight:900}.clash-hours{color:#ae4760;font-size:11px;font-weight:800;text-align:right}.clash-hours small{color:#76839a;font-weight:650}@media(max-width:780px){.mobile-nav{grid-template-columns:repeat(7,1fr)}.mobile-nav button{font-size:8px}.module-select{width:100%;max-width:none;margin-left:0}.conflict-pair{grid-template-columns:minmax(0,1fr) 17px minmax(0,1fr);gap:6px}.clash-hours{grid-column:1/-1;text-align:right}}
+
+/* Shift-first calendar — turn labels remain visible even in crowded days and on mobile */
+.cal-day-top{display:flex;justify-content:space-between;align-items:flex-start;gap:2px;min-height:28px;flex-wrap:wrap}
+.cal-day-events{min-width:0}
+.turn-pill{appearance:none;border:1px solid transparent;border-radius:8px;padding:4px 5px;font-weight:850;font-size:12px;line-height:1.1;min-height:25px;display:inline-flex;gap:4px;align-items:center;justify-content:center;text-align:center;min-width:38px;max-width:100%;white-space:nowrap;box-shadow:none;transition:filter .1s;flex-shrink:0}
+.turn-pill:hover{filter:brightness(.96)}
+.turn-letter{font-weight:900;letter-spacing:.01em}
+.turn-hours{font-size:9px;white-space:nowrap;font-weight:730}
+.turn-state{font-size:10px;font-weight:900}
+.turn-pill.theoretical{border:1px dashed currentColor;background:#f6f8fc;color:#66768d}
+.turn-pill.provisional{border:1px dotted currentColor}
+.turn-pill.confirmed{border-style:solid}
+.turn-pill.turn-m{background:#e5edff;color:#3155a1}
+.turn-pill.turn-p{background:#f3e8ff;color:#8141a9}
+.turn-pill.turn-n{background:#e6eafa;color:#394c88}
+.turn-pill.turn-s{background:#edf2f7;color:#62748c}
+.turn-pill.turn-r{background:#e1f6ec;color:#217b57}
+.turn-pill.turn-l{background:#fff0db;color:#965d12}
+.turn-pill.turn-f{background:#e2f7dc;color:#457824}
+.turn-pill.turn-perm{background:#faeced;color:#a04f60}
+.turn-pill.turn-mrep{background:#e1f4f7;color:#1c738b}
+.turn-pill.turn-altro{background:#edf0f4;color:#59677a}
+.turn-pill.theoretical{border-style:dashed;opacity:.82}
+.turn-pill.provisional{border-style:dotted}
+.turn-pill.confirmed{border-style:solid}
+.turn-pill.compact{width:100%;min-height:34px;padding:5px 4px}
+.turn-calendar-key{background:white;border:1px solid var(--line);border-radius:12px;padding:10px 13px;margin:0 0 12px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.key-left{display:flex;align-items:center;flex-wrap:wrap;gap:7px;font-size:11px;color:#52617b}
+.key-left strong{color:#233656;font-size:12px}
+.key-samples b{font-weight:900}
+.key-note{border:1px dashed #a7b5c6;border-radius:5px;padding:3px 6px;color:#60758f}
+.quick-turn-section{margin:0 0 16px;padding:18px 20px}
+.quick-turn-actions{display:flex;gap:7px;flex-wrap:wrap}
+.quick-turn-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.quick-turn-day{min-width:0;background:#f8faff;border:1px solid var(--line);border-radius:12px;padding:9px 7px;display:flex;align-items:center;flex-direction:column;gap:6px}
+.quick-turn-date{font-size:12px;font-weight:800;color:#42546f}
+.quick-turn-day .turn-pill{width:100%;min-height:36px;font-size:15px}
+.quick-turn-day .turn-hours{font-size:10px}
+.quick-turn-state{font-size:10px;color:#71839b;font-weight:680}
+.quick-turn-empty{font-size:11px;color:#71829b;border:1px dashed #b4c4d5;border-radius:8px;background:#fff;width:100%;min-height:36px;font-weight:700}
+.turn-explainer{font-size:11px;color:#73829a;margin-top:10px}
+.week-shift{min-height:30px;margin:5px 0 10px}
+.week-shift .turn-pill{min-width:65px;max-width:150px}
+.agenda-head{display:flex;gap:12px;justify-content:space-between;align-items:center;margin-bottom:7px}
+.agenda-head .turn-pill{width:auto;min-width:70px}
+@media(max-width:1120px){.turn-hours{display:none}}
+@media(max-width:780px){.cal-day-top{flex-direction:column;gap:3px;align-items:stretch;min-height:40px}.cal-day-top .turn-pill{font-size:11px;width:100%;padding:4px 1px;min-width:0;min-height:21px;border-radius:6px}.cal-day-top .turn-hours{display:none}.cal-day-top .turn-state{font-size:8px}.cal-day{min-height:88px}.quick-turn-grid{gap:5px;overflow-x:auto;grid-template-columns:repeat(7,minmax(67px,1fr));padding-bottom:5px}.quick-turn-day{padding:7px 4px}.quick-turn-section{padding:15px 12px}.quick-turn-actions{width:100%}.quick-turn-actions .btn{font-size:11px}.turn-calendar-key{padding:9px;align-items:flex-start;flex-direction:column}.key-note{font-size:10px}}
+@media(max-width:390px){.cal-day-top .turn-pill{font-size:10px}.cal-day-top .turn-letter{font-size:11px}.cal-day-top .turn-state{font-size:7px}.cal-day{min-height:85px}}
+
+/* Uni & Turni v2: readable calendar text, registered/pending shift editing, shift import review */
+.turn-pill.recorded{border:1px solid #8a9baf;background:#eaf0f8}
+.turn-pill.provisional{border:2px dotted #d48e35;background:#fff6e7;color:#8b551e}
+.day-focus{border:1px solid #dce5f6;background:linear-gradient(110deg,#fff,#f3f6ff);border-radius:14px;padding:13px 16px;margin:2px 0 13px;display:flex;flex-direction:column;gap:10px}
+.day-focus-head{display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.day-focus-head strong{font-size:15px;font-weight:850}
+.day-focus-head .turn-pill{min-width:60px}
+.day-focus-events{display:flex;flex-wrap:wrap;gap:6px}
+.day-focus-event{border:0;border-left:3px solid var(--blue);border-radius:8px;background:#e9f0ff;color:#314f9c;font-size:11px;font-weight:660;padding:6px 9px;text-align:left;white-space:normal;max-width:100%}
+.day-focus-event.elective{border-color:var(--pink);background:#fbeaf8;color:#9f3888}.day-focus-event.exam{border-color:var(--amber);background:#fff3e2;color:#925e1d}
+.day-focus-event b{margin-right:5px}
+.cal-day .cal-event{font-weight:700}
+.import-modal{max-width:860px;width:min(94vw,860px)}
+.import-lead{font-size:12px;color:#536580;margin:0 0 14px;line-height:1.5}
+.import-steps{display:flex;justify-content:space-between;gap:9px;background:#f2f5ff;color:#475e8f;padding:10px 13px;border-radius:10px;font-size:11px;font-weight:800;margin-bottom:12px}
+.import-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.import-actions{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 13px}
+.import-status{border:1px solid #e0e7f1;background:#f8faff;border-radius:10px;color:#52647e;font-size:12px;padding:11px;margin-top:9px}
+.import-status[data-kind=error]{background:#fff0f0;border-color:#f4c8cf;color:#a13551}
+.import-status[data-kind=success]{background:#edf9f1;border-color:#c6ead5;color:#227453}
+.import-preview-head{display:flex;justify-content:space-between;align-items:center;gap:9px;margin:16px 0 8px}
+.import-preview-scroll{max-height:305px;overflow:auto;border:1px solid #e2e8f2;border-radius:10px}
+.import-preview-table{border-collapse:collapse;width:100%;min-width:680px;font-size:12px}
+.import-preview-table th{position:sticky;top:0;background:#f4f7fc;color:#546580;font-size:11px;text-align:left}
+.import-preview-table th,.import-preview-table td{padding:6px;border-bottom:1px solid #e9eef6}
+.import-preview-table input,.import-preview-table select{max-width:100%;width:100%;padding:7px;border:1px solid #d7dfec;border-radius:7px;min-height:32px;font-size:12px}
+.import-preview-table td:first-child{min-width:150px}.import-preview-table td:nth-child(2){min-width:76px}.import-preview-table td:nth-child(3){min-width:170px}.import-preview-table td:nth-child(4){min-width:190px}
+.import-overwrite{display:flex;align-items:center;gap:9px;font-size:12px;color:#805324;padding:10px 2px}.import-overwrite input{width:auto;min-height:unset}
+.import-warning{background:#fff7ec;border:1px solid #f5dfbf;color:#805c2b;border-radius:10px;font-size:11px;padding:10px;margin-top:9px}.import-warning ul{margin:9px 0 0;padding-left:20px}
+@media(max-width:780px){
+  .cal-day{min-height:120px!important;padding:4px!important}
+  .cal-day-top{min-height:39px}
+  .cal-day .cal-event{display:block;width:100%;height:auto;min-height:18px;font-size:10px;line-height:1.15;padding:3px 2px;margin:3px 0 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-left-width:3px;vertical-align:baseline}
+  .cal-day-events{display:block;width:100%;min-width:0}
+  .cal-more{font-size:10px}
+  .import-grid{grid-template-columns:1fr}
+  .day-focus{padding:11px}
+}
+@media(max-width:420px){.cal-day{min-height:116px!important;padding:2px!important}.cal-day .cal-event{font-size:9px}.cal-day .turn-pill{font-size:11px}}
+</style><!-- Correzione salvataggio turni: 16 novembre 2026 -->
+</head><body class="ut-locked"><div class="app"><aside class="sidebar" aria-label="Menu principale"><div class="logo"><div class="logo-mark">U</div><div><div class="name">Uni & Turni</div><div class="caption">Università e lavoro</div></div></div><nav class="nav" id="sidebar-nav"></nav><div class="sidebar-foot"><strong>🔐 Dati sul dispositivo</strong><p>Le tue presenze e i tuoi turni restano nel browser. Esporta spesso un backup.</p></div></aside><main class="main"><header class="topbar"><div><div class="eyebrow" id="eyebrow"></div><h1 id="page-title">Panoramica</h1></div><div class="topactions"><span class="chip ok">✓ Offline · senza crediti</span><button class="btn sm mobile-hidden" data-action="export-backup">↓ Backup</button><button class="btn sm primary" data-action="add-event">+ Impegno</button></div></header><section id="view" aria-live="polite"></section></main></div><nav id="mobile-nav" class="mobile-nav" aria-label="Menu rapido"></nav><div id="modal-root"></div><div id="toast-root"></div><script id="seed-data" type="application/json">{
+  "version": "2026-11-16-1",
+  "courses": [
+    {
+      "code": "D0638",
+      "title": "Educazione e promozione della salute - C.I.",
+      "cfu": 11,
+      "category": "mandatory",
+      "active": true
+    },
+    {
+      "code": "26337",
+      "title": "Idoneità lingua inglese B-2",
+      "cfu": 3,
+      "category": "mandatory",
+      "active": true
+    },
+    {
+      "code": "71032",
+      "title": "Il rischio cardiovascolare globale - C.I.",
+      "cfu": 3,
+      "category": "elective",
+      "active": true
+    },
+    {
+      "code": "70780",
+      "title": "Le malattie tropicali e la medicina del viaggiatore - C.I.",
+      "cfu": 3,
+      "category": "elective",
+      "active": true
+    },
+    {
+      "code": "D0633",
+      "title": "Processi di programmazione e integrazione organizzativa - C.I.",
+      "cfu": 8,
+      "category": "mandatory",
+      "active": true
+    },
+    {
+      "code": "D0628",
+      "title": "Statistica e infermieristica basata sulle evidenze - C.I.",
+      "cfu": 8,
+      "category": "mandatory",
+      "active": true
+    },
+    {
+      "code": "D0629",
+      "title": "Teorie e filosofie delle scienze infermieristiche - C.I.",
+      "cfu": 8,
+      "category": "mandatory",
+      "active": true
+    },
+    {
+      "code": "17740",
+      "title": "Tirocinio specialistico I",
+      "cfu": 15,
+      "category": "mandatory",
+      "active": true
+    }
+  ],
+  "events": [
+    {
+      "id": "unibo-6376-2026-39366-2026-11-02-1000",
+      "date": "2026-11-02",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-02-1400",
+      "date": "2026-11-02",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-02-1600",
+      "date": "2026-11-02",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-05-1000",
+      "date": "2026-11-05",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-05-1400",
+      "date": "2026-11-05",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Pad. 4, via Massarenti 13, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-06-0900",
+      "date": "2026-11-06",
+      "start": "09:00",
+      "end": "11:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-06-1100",
+      "date": "2026-11-06",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-06-1400",
+      "date": "2026-11-06",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-10-1000",
+      "date": "2026-11-10",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-10-1400",
+      "date": "2026-11-10",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-12-0900",
+      "date": "2026-11-12",
+      "start": "09:00",
+      "end": "11:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-12-1100",
+      "date": "2026-11-12",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-12-1400",
+      "date": "2026-11-12",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-16-1000",
+      "date": "2026-11-16",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-16-1400",
+      "date": "2026-11-16",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-18-1100",
+      "date": "2026-11-18",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Massimo D’Addato, piano terra, Sant’Orsola Pad. 5, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-18-1400",
+      "date": "2026-11-18",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-19-1100",
+      "date": "2026-11-19",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-20-1100",
+      "date": "2026-11-20",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-24-1000",
+      "date": "2026-11-24",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-24-1400",
+      "date": "2026-11-24",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-39366-2026-11-26-0900",
+      "date": "2026-11-26",
+      "start": "09:00",
+      "end": "11:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0628",
+      "module_code": "39366",
+      "module_name": "Statistica medica applicata all’assistenza",
+      "teacher": "Lisa Argnani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566537/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-07234-2026-11-26-1100",
+      "date": "2026-11-26",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "07234",
+      "module_name": "Sociologia della salute",
+      "teacher": "Debora Mantovani",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566544/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0630-2026-11-26-1400",
+      "date": "2026-11-26",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0630",
+      "module_name": "Antropologia per l’assistenza infermieristica",
+      "teacher": "Cecilia Gallotti",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566541/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0632-2026-11-30-0900",
+      "date": "2026-11-30",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0632",
+      "module_name": "Pianificazione e esiti dell’assistenza infermieristica",
+      "teacher": "Manuela De Rosa",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566543/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2026-11-30-1400",
+      "date": "2026-11-30",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0632-2026-12-02-0900",
+      "date": "2026-12-02",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0632",
+      "module_name": "Pianificazione e esiti dell’assistenza infermieristica",
+      "teacher": "Manuela De Rosa",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566543/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-94169-2026-12-02-1400",
+      "date": "2026-12-02",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "94169",
+      "module_name": "Laboratorio di gestione dei dati sanitari",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566535/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2026-12-04-1000",
+      "date": "2026-12-04",
+      "start": "10:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2026-12-04-1400",
+      "date": "2026-12-04",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0632-2026-12-10-0900",
+      "date": "2026-12-10",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0632",
+      "module_name": "Pianificazione e esiti dell’assistenza infermieristica",
+      "teacher": "Manuela De Rosa",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566543/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-94169-2026-12-10-1400",
+      "date": "2026-12-10",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "94169",
+      "module_name": "Laboratorio di gestione dei dati sanitari",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566535/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-90469-2026-12-14-0900",
+      "date": "2026-12-14",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2026-12-14-1400",
+      "date": "2026-12-14",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0632-2026-12-16-0900",
+      "date": "2026-12-16",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0632",
+      "module_name": "Pianificazione e esiti dell’assistenza infermieristica",
+      "teacher": "Manuela De Rosa",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566543/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2026-12-16-1400",
+      "date": "2026-12-16",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-90469-2026-12-18-0900",
+      "date": "2026-12-18",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2026-12-18-1500",
+      "date": "2026-12-18",
+      "start": "15:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2026-12-22-0900",
+      "date": "2026-12-22",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2026-12-22-1500",
+      "date": "2026-12-22",
+      "start": "15:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2027-01-07-0900",
+      "date": "2027-01-07",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2027-01-07-1400",
+      "date": "2027-01-07",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-11-0900",
+      "date": "2027-01-11",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70781-2027-01-11-1400",
+      "date": "2027-01-11",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70781",
+      "module_name": "Infezioni nel viaggiatore e nell’immigrato",
+      "teacher": "Gabriella Verucchi",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507481/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-94169-2027-01-11-1400",
+      "date": "2027-01-11",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "94169",
+      "module_name": "Laboratorio di gestione dei dati sanitari",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566535/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70783-2027-01-11-1600",
+      "date": "2027-01-11",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70783",
+      "module_name": "Profilassi e terapia",
+      "teacher": "Marina Tadolini",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566715/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-70783-2027-01-12-1400",
+      "date": "2027-01-12",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70783",
+      "module_name": "Profilassi e terapia",
+      "teacher": "Marina Tadolini",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566715/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-70782-2027-01-12-1600",
+      "date": "2027-01-12",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70782",
+      "module_name": "Patologie tropicali: diagnosi",
+      "teacher": "Stefania Varani",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507482/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-58779-2027-01-13-0900",
+      "date": "2027-01-13",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70782-2027-01-13-1400",
+      "date": "2027-01-13",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70782",
+      "module_name": "Patologie tropicali: diagnosi",
+      "teacher": "Stefania Varani",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507482/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-13-1400",
+      "date": "2027-01-13",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Magna Dermatologia, piano 1, Sant’Orsola Pad. 21-24-25-27-28-29, via Massarenti 1, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70781-2027-01-13-1600",
+      "date": "2027-01-13",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70781",
+      "module_name": "Infezioni nel viaggiatore e nell’immigrato",
+      "teacher": "Gabriella Verucchi",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507481/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-15-0900",
+      "date": "2027-01-15",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-94169-2027-01-15-1400",
+      "date": "2027-01-15",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "94169",
+      "module_name": "Laboratorio di gestione dei dati sanitari",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566535/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70782-2027-01-18-1400",
+      "date": "2027-01-18",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70782",
+      "module_name": "Patologie tropicali: diagnosi",
+      "teacher": "Stefania Varani",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507482/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-70783-2027-01-18-1600",
+      "date": "2027-01-18",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70783",
+      "module_name": "Profilassi e terapia",
+      "teacher": "Marina Tadolini",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566715/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-D0632-2027-01-19-0900",
+      "date": "2027-01-19",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0632",
+      "module_name": "Pianificazione e esiti dell’assistenza infermieristica",
+      "teacher": "Manuela De Rosa",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566543/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70781-2027-01-19-1400",
+      "date": "2027-01-19",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70781",
+      "module_name": "Infezioni nel viaggiatore e nell’immigrato",
+      "teacher": "Gabriella Verucchi",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507481/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-19-1400",
+      "date": "2027-01-19",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-70782-2027-01-19-1600",
+      "date": "2027-01-19",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70782",
+      "module_name": "Patologie tropicali: diagnosi",
+      "teacher": "Stefania Varani",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507482/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-70783-2027-01-20-1400",
+      "date": "2027-01-20",
+      "start": "14:00",
+      "end": "16:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70783",
+      "module_name": "Profilassi e terapia",
+      "teacher": "Marina Tadolini",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566715/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-70781-2027-01-20-1600",
+      "date": "2027-01-20",
+      "start": "16:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "70780",
+      "module_code": "70781",
+      "module_name": "Infezioni nel viaggiatore e nell’immigrato",
+      "teacher": "Gabriella Verucchi",
+      "room": "Aula Malattie Infettive, piano 3, Sant’Orsola Padiglione 6, via Giuseppe Massarenti 11, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/507481/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-58779-2027-01-21-0900",
+      "date": "2027-01-21",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2027-01-21-1400",
+      "date": "2027-01-21",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Magna Ostetricia e Ginecologia, piano terra, Sant’Orsola Pad. 4, via Massarenti 13, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-25-0900",
+      "date": "2027-01-25",
+      "start": "09:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-94169-2027-01-25-1400",
+      "date": "2027-01-25",
+      "start": "14:00",
+      "end": "17:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 3.0,
+      "parent_course_code": "D0628",
+      "module_code": "94169",
+      "module_name": "Laboratorio di gestione dei dati sanitari",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566535/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-58779-2027-01-27-0900",
+      "date": "2027-01-27",
+      "start": "09:00",
+      "end": "11:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0628",
+      "module_code": "58779",
+      "module_name": "Infermieristica basata sulle evidenze scientifiche",
+      "teacher": "Valentina Biagioli",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566538/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-D0631-2027-01-27-1100",
+      "date": "2027-01-27",
+      "start": "11:00",
+      "end": "13:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 2.0,
+      "parent_course_code": "D0629",
+      "module_code": "D0631",
+      "module_name": "Filosofia e teoria delle scienze infermieristiche",
+      "teacher": "Giuseppe Pio Bartolillo",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566542/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-90469-2027-01-27-1400",
+      "date": "2027-01-27",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "D0628",
+      "module_code": "90469",
+      "module_name": "Laboratorio di ricerca bibliografica",
+      "teacher": "Lea Godino",
+      "room": "Aula Pisi, piano terra, Sant’Orsola Pad. 9-11-14, via Massarenti 9, Bologna",
+      "category": "mandatory",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566536/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": ""
+    },
+    {
+      "id": "unibo-6376-2026-71035-2027-02-02-1400",
+      "date": "2027-02-02",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71035",
+      "module_name": "Diagnosi e cura delle alterazioni del metabolismo lipidico primitive e secondarie",
+      "teacher": "Sergio D’Addato",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/562800/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-71035-2027-02-05-1400",
+      "date": "2027-02-05",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71035",
+      "module_name": "Diagnosi e cura delle alterazioni del metabolismo lipidico primitive e secondarie",
+      "teacher": "Sergio D’Addato",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/562800/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-71034-2027-02-08-1400",
+      "date": "2027-02-08",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71034",
+      "module_name": "Diagnosi e cura dell’ipertensione arteriosa primitiva e secondaria",
+      "teacher": "Arrigo Francesco Giuseppe Cicero",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/562799/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-71033-2027-02-10-1400",
+      "date": "2027-02-10",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71033",
+      "module_name": "Valutazione del rischio cardiovascolare",
+      "teacher": "Luciano Potena",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566721/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-71034-2027-02-15-1400",
+      "date": "2027-02-15",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71034",
+      "module_name": "Diagnosi e cura dell’ipertensione arteriosa primitiva e secondaria",
+      "teacher": "Arrigo Francesco Giuseppe Cicero",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/562799/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    },
+    {
+      "id": "unibo-6376-2026-71033-2027-02-17-1400",
+      "date": "2027-02-17",
+      "start": "14:00",
+      "end": "18:00",
+      "timezone": "Europe/Rome",
+      "duration_hours": 4.0,
+      "parent_course_code": "71032",
+      "module_code": "71033",
+      "module_name": "Valutazione del rischio cardiovascolare",
+      "teacher": "Luciano Potena",
+      "room": "Aula Sfameni, piano terra, Sant’Orsola Padiglione 4, via Giuseppe Massarenti 13, Bologna",
+      "category": "elective",
+      "active": true,
+      "attendance": null,
+      "verification": "official_module_timetable_2026_27",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566721/orariolezioni",
+      "source_note": "Orario ufficiale UNIBO controllato il 15/11/2026; possibili aggiornamenti futuri.",
+      "notes": null
+    }
+  ],
+  "exams": [],
+  "rules": [
+    {
+      "module_code": "71034",
+      "parent_course_code": "71032",
+      "threshold": 0.75,
+      "verification": "official_module_syllabus",
+      "source_url": "https://www.unibo.it/it/studiare/insegnamenti-competenze-trasversali-moocs/insegnamenti/insegnamento/2026/566722",
+      "note": "La scheda del docente dice: Partecipazione ad almeno il 75% delle lezioni."
+    }
+  ],
+  "missing": [
+    {
+      "code": "D0638",
+      "title": "Educazione e promozione della salute",
+      "status": "no_2026_27_module_timetable_dates_identified_in_official_course_search",
+      "modules": [
+        "D0639",
+        "D0640",
+        "13220",
+        "94166"
+      ]
+    },
+    {
+      "code": "D0633",
+      "title": "Processi di programmazione e integrazione organizzativa",
+      "status": "no_2026_27_module_timetable_dates_identified_in_official_course_search",
+      "modules": [
+        "D0634",
+        "D0635",
+        "D0636",
+        "D0637"
+      ]
+    },
+    {
+      "code": "26337",
+      "title": "Idoneità lingua inglese B-2",
+      "status": "no_fixed_lesson_timetable_confirmed"
+    },
+    {
+      "code": "17740",
+      "title": "Tirocinio specialistico I",
+      "status": "individual_allocation_unknown"
+    }
+  ],
+  "source": "Orari lezioni UNIBO 2026/27: importazione iniziale. Esami e turni personali non inclusi nel codice pubblico."
+}</script><script>'use strict';
+const seed = JSON.parse(document.getElementById('seed-data').textContent);
+const STORAGE_KEY='uni-e-turni-private-placeholder-v1';
+const NOVEMBER_SHIFTS={};
+const NAV=[['home','⌂','Panoramica'],['calendar','▦','Calendario'],['attendance','◴','Frequenze'],['conflicts','⚡','Conflitti'],['shifts','↻','Turni'],['exams','✎','Esami'],['settings','⚙','Impostazioni']];
+const LABELS={mandatory:'Obbligatoria',elective:'A scelta',exam:'Esame',shift:'Turno',custom:'Personale'};
+const WDAY=['Domenica','Lunedì','Martedì','Mercoledì','Giovedì','Venerdì','Sabato'];
+const MONTHS=['gennaio','febbraio','marzo','aprile','maggio','giugno','luglio','agosto','settembre','ottobre','novembre','dicembre'];
+const DEFAULT_STATE=()=>({version:1,patches:{},customEvents:[],deletedIds:[],attendance:{},shifts:JSON.parse(JSON.stringify(NOVEMBER_SHIFTS)),novemberImported:true,projection:true,filters:{mandatory:true,elective:true,exam:true,shift:true,custom:true},calendarMode:'month'});
+let saved=null;
+try{ saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null'); }catch(e){}
+let data=Object.assign(DEFAULT_STATE(),saved&&typeof saved==='object'?saved:{});
+for(const key of ['patches','shifts','attendance','filters']) if(!data[key] || typeof data[key]!=='object'||Array.isArray(data[key]))data[key]=DEFAULT_STATE()[key];
+if(!Array.isArray(data.customEvents))data.customEvents=[];
+if(!Array.isArray(data.deletedIds))data.deletedIds=[];
+// One-time, additive November migration: never replace edits saved in the previous version.
+if(saved && !saved.novemberImported){for(const [d,turn] of Object.entries(NOVEMBER_SHIFTS)){if(!Object.prototype.hasOwnProperty.call(data.shifts,d))data.shifts[d]={...turn};}data.novemberImported=true;try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data));}catch(e){}}
+const ui={tab:'home',date:today(),month:today().slice(0,7),modal:null,filterModule:null,shiftMonth:today().slice(0,7)};
+let toastTimer=null;
+function today(){const x=new Date();return [x.getFullYear(),String(x.getMonth()+1).padStart(2,'0'),String(x.getDate()).padStart(2,'0')].join('-');}
+function html(v){return String(v??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));}
+function dlocal(s){const [y,m,d]=(s||today()).split('-').map(Number);return new Date(y,m-1,d,12,0,0);}
+function iso(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;}
+function addDays(s,n){const d=dlocal(s);d.setDate(d.getDate()+n);return iso(d);}
+function addMonths(s,n){const [y,m]=s.split('-').map(Number);return iso(new Date(y,m-1+n,1)).slice(0,7);}
+function dayNumber(s){return dlocal(s).getDate();}
+function niceDate(s,style='long'){if(!s)return '—';const d=dlocal(s);return style==='short'?`${d.getDate()} ${MONTHS[d.getMonth()].slice(0,3)}`:style==='medium'?`${WDAY[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`:`${WDAY[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;}
+function monthName(s){const [y,m]=s.split('-').map(Number);return `${MONTHS[m-1][0].toUpperCase()+MONTHS[m-1].slice(1)} ${y}`;}
+function fmtHours(n){return Number(n||0).toLocaleString('it-IT',{maximumFractionDigits:1,minimumFractionDigits:0});}
+function min(t){if(!t)return null;const [h,m]=t.split(':').map(Number);return h*60+m;}
+function duration(ev){if(!ev.end)return null;let n=min(ev.end)-min(ev.start);if(ev.endDate && ev.endDate>ev.date)n+=1440;return Math.max(0,n)/60;}
+function save(){
+ // A successful setItem is not enough: verify that this browser actually retained the value.
+ try{
+  const serialized=JSON.stringify(data);
+  localStorage.setItem(STORAGE_KEY,serialized);
+  if(localStorage.getItem(STORAGE_KEY)!==serialized)throw new Error('Il browser non ha conservato i dati');
+  return true;
+ }catch(e){
+  console.error('Uni & Turni: impossibile memorizzare le modifiche nel browser',e);
+  notify('Salvataggio NON riuscito: il browser non conserva i dati locali.');
+  return false;
+ }
+}
+function notify(message){const el=document.getElementById('toast-root');el.innerHTML=`<div role="status" class="toast">${html(message)}</div>`;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.replaceChildren(),2900);}
+function getSeedEvents(){const lectures=seed.events.map(e=>({id:e.id,date:e.date,start:e.start,end:e.end,title:e.module_name,type:e.category,course:e.parent_course_code,module:e.module_code,room:e.room,teacher:e.teacher,notes:e.notes||'',source:e.source_url,verified:true}));const exams=seed.exams.map(e=>({id:e.id,date:e.date,start:e.start,end:e.end,title:e.title,type:'exam',course:e.parent_course_code,module:e.module_code,room:e.location,notes:e.notes||'',booking:e.booking_status||'unknown',verified:true,examType:e.exam_type}));return lectures.concat(exams);}
+const initialEvents=getSeedEvents();
+function allEvents(){return initialEvents.filter(e=>!data.deletedIds.includes(e.id)).map(e=>Object.assign({},e,data.patches[e.id]||{})).concat(data.customEvents.filter(e=>!data.deletedIds.includes(e.id))).sort(eventSort);}
+function eventSort(a,b){return (a.date||'').localeCompare(b.date||'')||(a.start||'').localeCompare(b.start||'')||(a.title||'').localeCompare(b.title||'');}
+function byId(id){return allEvents().find(e=>e.id===id)||null;}
+function lecture(e){return e.type==='mandatory'||e.type==='elective';}
+function isVisible(e){return data.filters[e.type]!==false && (e.type==='shift' || !ui.filterModule || (e.module||'')===ui.filterModule);}
+function attendance(e){return data.attendance[e.id]||{status:'unset',hours:0};}
+function effectiveHours(e){const a=attendance(e);const h=duration(e)||0;return a.status==='present'?h:a.status==='partial'?Math.max(0,Math.min(h,Number(a.hours)||0)):0;}
+function setAttendance(id,status,hours){const e=byId(id);if(!e||!lecture(e))return;if(status==='unset')delete data.attendance[id];else data.attendance[id]={status,hours:status==='partial'?Math.max(0,Math.min(duration(e)||0,Number(hours)||0)):(status==='present'?duration(e)||0:0)};save();render();notify(status==='unset'?'Presenza riportata a “da segnare”.':'Registro presenze aggiornato.');}
+function shiftFor(d){
+ if(data.shifts[d]){const s=data.shifts[d];const code=String(s.code||'ALTRO').toUpperCase();const status=shiftRecordStatus(s);
+ return {...s,status,id:'shift-'+d,date:d,title:'Turno '+code,type:'shift',start:shiftHours(code)[0],end:shiftHours(code)[1],endDate:code==='N'?addDays(d,1):null,simulated:false,tentative:status!=='confirmed'};}
+ if(!data.projection || d<'2026-12-01'||d>'2027-06-30')return null;
+ const base=dlocal('2026-12-01');const cur=dlocal(d);const idx=Math.round((cur-base)/86400000);const codes=['M','N','S','R','P'];const code=codes[((idx%5)+5)%5];return {id:'projection-'+d,date:d,title:'Turno teorico '+code,code,type:'shift',start:shiftHours(code)[0],end:shiftHours(code)[1],endDate:code==='N'?addDays(d,1):null,simulated:true,tentative:true};
+}
+// A compact always-visible turn badge. Recorded shifts override theoretical projections.
+const SHIFT_LABELS={M:'Mattina',P:'Pomeriggio',N:'Notte',S:'Smonto',R:'Riposo',L:'Lunga',MREP:'Mattina + reperibilità',F:'Ferie',PERM:'Permesso',ALTRO:'Altro'};
+const SHIFT_TIMES={M:'07–14',P:'13:10–20',N:'19:40–07',L:'07–17',MREP:'07–14'};
+function shiftRecordStatus(s){return ['confirmed','pending','recorded'].includes(s?.status)?s.status:(s?.confirmed?'confirmed':'pending');}
+function shiftStatus(date,shift){return !shift?'':!data.shifts[date]?'Teorico':shiftRecordStatus(data.shifts[date])==='confirmed'?'Confermato':shiftRecordStatus(data.shifts[date])==='pending'?'Da confermare':'Registrato';}
+function shiftBadge(date,compact=false){
+  if(data.filters.shift===false)return '';
+  const shift=shiftFor(date);
+  if(!shift)return '';
+  const kind=shiftStatus(date,shift);
+  const code=String(shift.code||'ALTRO').toUpperCase();
+  const safeCode=/^(M|P|N|S|R|L|MREP|F|PERM|ALTRO)$/.test(code)?code:'ALTRO';
+  const label=SHIFT_LABELS[safeCode]||'Altro';
+  const hours=SHIFT_TIMES[safeCode]||'';
+  const title=`${label}${hours?' · '+hours:''} · ${kind}${data.shifts[date]?.notes?' · '+data.shifts[date].notes:''}`;
+  return `<button type="button" class="turn-pill turn-${safeCode.toLowerCase()} ${kind==='Teorico'?'theoretical':kind==='Confermato'?'confirmed':kind==='Da confermare'?'provisional':'recorded'} ${compact?'compact':''}" data-action="edit-shift" data-date="${html(date)}" title="${html(title)}" aria-label="${html(date)}: ${html(title)}"><span class="turn-letter">${html(code)}</span>${hours?`<span class="turn-hours">${html(hours)}</span>`:''}<span class="turn-state" aria-hidden="true">${kind==='Confermato'?'✓':kind==='Da confermare'?'?':kind==='Registrato'?'•':'~'}</span></button>`;
+}
+function renderShiftOverview(){
+  const now=today();
+  const recordedSoon=Object.keys(data.shifts).some(d=>d>=now && d<'2026-12-01');
+  const base=now<'2026-12-01'&&!recordedSoon?'2026-12-01':now;
+  const days=Array.from({length:7},(_,i)=>addDays(base,i));
+  const loaded=days.some(d=>shiftFor(d));
+  return `<section class="card quick-turn-section" aria-label="Turni della settimana"><div class="section-title"><div><h2>Turni a colpo d’occhio</h2><p class="muted small">${base===now?'Da oggi':`Dal ${html(niceDate(base,'medium'))}`} · seleziona un turno per modificarlo</p></div><div class="quick-turn-actions"><button class="btn sm" data-action="toggle-projection">${data.projection?'Nascondi':'Mostra'} turni teorici</button><button class="btn sm" data-action="tab" data-tab="shifts">Tutti i turni</button></div></div>
+  <div class="quick-turn-grid">${days.map(d=>{const sf=shiftFor(d);return `<div class="quick-turn-day"><span class="quick-turn-date">${html(WDAY[dlocal(d).getDay()].slice(0,3))} ${dayNumber(d)}</span>${sf?shiftBadge(d,true):`<button class="quick-turn-empty" data-action="edit-shift" data-date="${html(d)}" title="Inserisci turno">+ Turno</button>`}<span class="quick-turn-state">${sf?html(shiftStatus(d,sf)):'Da caricare'}</span></div>`;}).join('')}</div>
+  <p class="turn-explainer">${loaded?'Tratteggiato = teorico. Puntinato arancione = da confermare. Ogni turno si modifica toccando la sigla.':'Non ci sono turni per queste date. Inseriscili nella sezione Turni o attiva la rotazione teorica.'}</p></section>`;
+}
+function shiftHours(code){return {M:['07:00','14:00'],P:['13:10','20:00'],N:['19:40','07:00'],L:['07:00','17:00'],MREP:['07:00','14:00'],S:[null,null],R:[null,null],F:[null,null],PERM:[null,null],ALTRO:[null,null]}[code]||[null,null];}
+function eventsOn(d,filtered=true){let arr=allEvents().filter(e=>e.date===d && (!filtered||isVisible(e)));const s=shiftFor(d);if(s && (!filtered||isVisible(s)))arr.push(s);return arr.sort((a,b)=>(a.start||'').localeCompare(b.start||''));}
+function dateSpan(month){const [y,m]=month.split('-').map(Number);const first=new Date(y,m-1,1);const firstOfGrid=new Date(y,m-1,1-(first.getDay()+6)%7);return Array.from({length:42},(_,i)=>iso(new Date(firstOfGrid.getFullYear(),firstOfGrid.getMonth(),firstOfGrid.getDate()+i)));}
+function eventStamp(e,field){const d=(field==='end'&&e.endDate)||e.date;const clock=field==='end'?e.end:e.start;if(!d||!clock)return null;const [y,m,day]=d.split('-').map(Number);const [h,mm]=clock.split(':').map(Number);return new Date(y,m-1,day,h,mm).getTime();}
+function calculateConflicts(){const list=allEvents().filter(e=>lecture(e)||e.type==='exam'||e.type==='custom');const dates=new Set(list.map(e=>e.date));Object.keys(data.shifts).forEach(x=>dates.add(x));if(data.projection)for(let d='2026-12-01';d<='2027-03-01';d=addDays(d,1))dates.add(d);
+const shifts=[...dates].map(shiftFor).filter(Boolean).filter(e=>e.start && e.end);
+const grouped=new Map();for(const e of list.concat(shifts)){if(e.start){const ar=grouped.get(e.date)||[];ar.push(e);grouped.set(e.date,ar);}}
+const overlaps=[];
+// Include overnight shifts by placing them also in next day for intersection.
+for(const s of shifts.filter(x=>x.endDate)){const ar=grouped.get(s.endDate)||[];ar.push(s);grouped.set(s.endDate,ar);}
+const seen=new Set();for(const [date,arr] of grouped){for(let i=0;i<arr.length;i++)for(let j=i+1;j<arr.length;j++){
+const a=arr[i],b=arr[j];if(a.id===b.id)continue;if(a.type==='shift'&&b.type==='shift')continue;
+// Only conflicts relevant to user; do not flag two electives on same date from distinct modules if simultaneous? still flag.
+const key=[a.id,b.id].sort().join('|');if(seen.has(key))continue;
+const sa=eventStamp(a,'start'),sb=eventStamp(b,'start'),ea=eventStamp(a,'end'),eb=eventStamp(b,'end');if(sa===null||sb===null)continue;
+let kind=null,hours=null;
+if(ea!==null && eb!==null){let overlap=Math.min(ea,eb)-Math.max(sa,sb);if(overlap>0){kind='overlap';hours=overlap/3600000;}}
+else if(ea===null && eb!==null && sa>=sb && sa<eb)kind='unknown-exam-end';
+else if(eb===null && ea!==null && sb>=sa && sb<ea)kind='unknown-exam-end';
+if(kind){seen.add(key);overlaps.push({id:key,date:date,start:a.start,end:b.end,a,b,hours,kind,simulated:!!(a.simulated||b.simulated||a.tentative||b.tentative)});}
+}}
+return overlaps.sort((a,b)=>a.date.localeCompare(b.date));}
+function moduleSummaries(){const rows=new Map();for(const e of allEvents().filter(lecture)){const key=e.module||e.course||e.title;if(!rows.has(key))rows.set(key,{module:key,course:e.course,title:e.title,type:e.type,total:0,present:0,absent:0,pending:0,marked:0,count:0,threshold:key==='71034'?.75:.6,events:[]});const r=rows.get(key);const h=duration(e)||0;const a=attendance(e);r.total+=h;r.present+=effectiveHours(e);r.count++;r.events.push(e);if(a.status==='unset'){r.pending+=h;}else{r.marked++;r.absent+=h-effectiveHours(e);}}
+return [...rows.values()].sort((a,b)=>(a.type===b.type?0:a.type==='elective'?-1:1)||(a.course||'').localeCompare(b.course||'')||(a.module||'').localeCompare(b.module||''));}
+function courseSummaries(){const rows=new Map();for(const r of moduleSummaries()){const key=r.course||r.module;let e=rows.get(key);if(!e){e={course:key,total:0,present:0,absent:0,pending:0,marked:0,count:0,modules:[],type:r.type};rows.set(key,e);}for(const k of ['total','present','absent','pending','marked','count'])e[k]+=r[k];e.modules.push(r);}return [...rows.values()].sort((a,b)=>(a.type===b.type?0:a.type==='elective'?-1:1)||(a.course||'').localeCompare(b.course||''));}
+function courseTitle(code){return ({'71032':'Il rischio cardiovascolare globale','70780':'Le malattie tropicali e la medicina del viaggiatore','D0628':'Statistica e infermieristica basata sulle evidenze','D0629':'Teorie e filosofie delle scienze infermieristiche','D0638':'Educazione e promozione della salute','D0633':'Processi di programmazione e integrazione organizzativa','26337':'Inglese B2'})[code] || (seed.courses.find(x=>x.code===code)||{}).title || code;}
+function statusTag(e){const a=attendance(e).status;return a==='present'?'<span class="tag good">Presente</span>':a==='absent'?'<span class="tag danger">Assente</span>':a==='partial'?'<span class="tag pending">Parziale</span>':'<span class="tag pending">Da segnare</span>';}
+function typeTag(e){return `<span class="tag ${html(e.type)}">${html(LABELS[e.type]||e.type)}</span>`;}
+function tRange(e){return `${html(e.start||'—')}${e.end?'–'+html(e.end):e.start?' · fine da definire':''}`;}
+function simpleCard(e,quick=false){const shift=e.type==='shift';const details=shift?(e.simulated?'Turno simulato: non confermato':shiftStatus(e.date,e)+' · '+(e.notes||'Modificabile')):(e.room||'Sede non specificata');const name=e.title||'Impegno';return `<div class="event-card ${html(e.type)}"><div class="color-line"></div><div class="event-time">${html(e.start||'—')}${e.end?'<br><span class="xs muted">'+html(e.end)+'</span>':''}</div><div class="event-body"><strong>${html(name)}</strong><p>${html(details)}</p>${shift?'<span class="tag '+(e.simulated||e.tentative?'pending':'good')+'">'+(e.simulated?'Simulazione':html(shiftStatus(e.date,e)))+'</span>':typeTag(e)} ${!shift&&lecture(e)?statusTag(e):''}</div><div class="quick">${quick&&!shift&&lecture(e)?`<button class="mini-status present" aria-label="Segna presente" data-action="mark" data-id="${html(e.id)}" data-status="present">✓</button><button class="mini-status absent" aria-label="Segna assente" data-action="mark" data-id="${html(e.id)}" data-status="absent">✕</button>`:''}<button class="btn icon sm" data-action="${shift?'edit-shift':'edit-event'}" data-id="${html(e.id)}" data-date="${html(e.date)}" aria-label="Modifica">✎</button></div></div>`;}
+function navRender(){const nav=items=>items.map(([key,ico,title])=>`<button data-action="tab" data-tab="${key}" class="${ui.tab===key?'active':''}">${items===NAV?`<span>${ico}</span>`:''}${title}</button>`).join('');document.getElementById('sidebar-nav').innerHTML=NAV.map(([key,ico,title])=>`<button class="nav-btn ${ui.tab===key?'active':''}" data-action="tab" data-tab="${key}"><span class="sym">${ico}</span>${title}</button>`).join('');document.getElementById('mobile-nav').innerHTML=NAV.map(([key,ico,title])=>`<button class="${ui.tab===key?'active':''}" data-action="tab" data-tab="${key}"><span>${ico}</span><span>${title}</span></button>`).join('');}
+function render(){navRender();const meta={home:['La tua università, organizzata','Panoramica'],calendar:['Ogni impegno, al suo posto','Calendario'],attendance:['Controllo delle ore','Frequenze'],shifts:['Lavoro e turnazione','Turni'],exams:['Prove e appelli','Esami'],settings:['Backup e preferenze','Impostazioni'],conflicts:['Attività che coincidono','Conflitti']};document.getElementById('eyebrow').textContent=meta[ui.tab][0];document.getElementById('page-title').textContent=meta[ui.tab][1];document.getElementById('view').innerHTML=({home:renderHome,calendar:renderCalendar,attendance:renderAttendance,conflicts:renderConflicts,shifts:renderShifts,exams:renderExams,settings:renderSettings}[ui.tab])();document.title=`${meta[ui.tab][1]} · Uni & Turni`;}
+function nextItems(n=5){return allEvents().filter(e=>e.date>=today()).concat([...Object.keys(data.shifts)].map(shiftFor).filter(e=>e&&e.date>=today())).sort(eventSort).slice(0,n);}
+function renderHome(){const events=allEvents(),exams=events.filter(e=>e.type==='exam').sort(eventSort);const next=nextItems(7),conf=calculateConflicts().filter(c=>!c.simulated);const recorded=events.filter(lecture).filter(e=>attendance(e).status!=='unset');const daysWithConflict=new Set(conf.map(c=>c.date)).size;const upcomingExam=exams.find(e=>e.date>=today());return `<div class="welcome"><div><div class="eyebrow" style="color:#bec9ff">Anno accademico 2026/27</div><h2>Un posto solo per uni e lavoro.</h2><p>Lezioni, esami, turni e presenze. I dati restano sul tuo dispositivo e puoi esportarli quando vuoi.</p></div><div class="orb" aria-hidden="true">✳</div></div>
+${renderShiftOverview()}
+<div class="stat-grid"><div class="card stat"><div class="stat-icon">📚</div><div class="num">${events.filter(lecture).length}</div><div class="name">Lezioni in calendario</div></div><div class="card stat"><div class="stat-icon">📝</div><div class="num">${exams.length}</div><div class="name">Esami personali</div></div><div class="card stat"><div class="stat-icon">⚡</div><div class="num">${daysWithConflict}</div><div class="name">Giorni con conflitti</div></div><div class="card stat"><div class="stat-icon">✓</div><div class="num">${recorded.length}/${events.filter(lecture).length}</div><div class="name">Lezioni con presenza segnata</div></div></div>
+<div class="section twocol"><div class="card"><div class="section-title"><h2>Prossimi impegni</h2><button class="btn sm" data-action="tab" data-tab="calendar">Vedi calendario</button></div>${next.length?next.map(e=>`<div class="tiny-event"><div class="time-block"><b>${html(niceDate(e.date,'short'))}</b><span>${html(e.start||'—')}</span></div><div class="tinfo"><strong><span class="dot ${html(e.type)}"></span>${html(e.title)}</strong><p>${html(e.room||'Sede da definire')}</p></div><button class="btn icon sm" data-action="edit-event" data-id="${html(e.id)}">↗</button></div>`).join(''):'<div class="empty-state">Nessun evento imminente.</div>'}</div>
+<div><div class="card"><div class="section-title"><h2>Il prossimo esame</h2>${upcomingExam?'<span class="tag exam">Da preparare</span>':''}</div>${upcomingExam?`<div style="margin:13px 0"><div class="eyebrow">${html(niceDate(upcomingExam.date))}</div><h2>${html(upcomingExam.title)}</h2><p class="muted" style="margin-top:9px">⏰ ${tRange(upcomingExam)}</p><p class="muted" style="margin-top:5px">📍 ${html(upcomingExam.room||'Da definire')}</p></div><button class="btn sm" data-action="edit-event" data-id="${html(upcomingExam.id)}">Gestisci esame</button>`:'<div class="empty-state">Nessun esame futuro.</div>'}</div>
+<div class="card section"><div class="section-title"><h2>Da sapere</h2><button class="btn sm" data-action="tab" data-tab="conflicts">Dettagli</button></div><div class="notice"><strong>${daysWithConflict} giornate di sovrapposizioni (${fmtHours(conf.filter(c=>c.a.type!=='shift'&&c.b.type!=='shift').reduce((sum,c)=>sum+(c.hours||0),0))} ore)</strong>Le ore si possono gestire scegliendo le lezioni da seguire. Nessuna presenza viene segnata automaticamente.</div><p class="footnote">Le date dei turni future non sono confermate. Puoi inserirle nella sezione Turni quando saranno disponibili.</p></div></div></div>`;}
+const SHORT_CLASS_NAMES={'39366':'Statistica','07234':'Sociologia',D0630:'Antropologia',D0632:'Pianificazione','58779':'EBN','94169':'Gest. dati',D0631:'Filosofia','90469':'Ric. bibl.','70781':'Infezioni','70782':'Tropicali','70783':'Profilassi','71033':'Rischio CV','71034':'Ipertensione','71035':'Lipidi'};
+function shortClassName(e){return e.type==='exam'?'ESAME · '+e.title:SHORT_CLASS_NAMES[e.module]||e.title;}
+function renderCalendar(){
+const mode=data.calendarMode||'month';let body='';
+if(mode==='month'){
+  const dates=dateSpan(ui.month);const conflictDates=new Set(calculateConflicts().map(c=>c.date));
+  body=`<div class="calendar">${['Lun','Mar','Mer','Gio','Ven','Sab','Dom'].map(x=>`<div class="cal-dow">${x}</div>`).join('')}${dates.map(date=>{
+    const evs=eventsOn(date).filter(e=>e.type!=='shift');
+    const monthSame=date.slice(0,7)===ui.month;
+    return `<div role="button" tabindex="0" data-action="select-date" data-date="${date}" class="cal-day ${monthSame?'':'faded'} ${date===ui.date?'selected':''} ${date===today()?'today':''}"><div class="cal-day-top"><span class="daynum">${dayNumber(date)}${conflictDates.has(date)?'<span class="conflict-indicator" title="Sovrapposizioni nel giorno">!</span>':''}</span>${shiftBadge(date)}</div><div class="cal-day-events">${evs.slice(0,3).map(e=>`<button class="cal-event ${html(e.type)}" data-action="edit-event" data-id="${html(e.id)}" data-date="${date}" title="${html(e.title)}">${html((e.start||'').replace(':00',''))} ${html(shortClassName(e))}</button>`).join('')}${evs.length>3?`<span class="cal-more">+${evs.length-3} altri</span>`:''}</div></div>`;
+  }).join('')}</div>`;
+}
+else if(mode==='week'){
+  const dt=dlocal(ui.date);const offset=(dt.getDay()+6)%7;const start=addDays(ui.date,-offset);
+  body=`<div class="week-cards">${Array.from({length:7},(_,i)=>{
+    const d=addDays(start,i);const evs=eventsOn(d).filter(e=>e.type!=='shift');
+    return `<div class="week-col ${d===ui.date?'sel':''}"><h3><button class="btn sm ghost" data-action="select-date" data-date="${d}">${html(niceDate(d,'short'))}</button></h3><div class="week-shift">${shiftBadge(d,true)}</div>${evs.length?evs.map(e=>`<div class="week-entry ${html(e.type)}" data-action="edit-event" data-date="${d}" data-id="${html(e.id)}">${html(e.start||'')} · ${html(e.title)}</div>`).join(''):'<p class="muted xs">Nessun altro impegno</p>'}</div>`;
+  }).join('')}</div>`;
+}
+else{
+  let days=[];const [y,m]=ui.month.split('-').map(Number);
+  for(let day=1;day<=new Date(y,m,0).getDate();day++)days.push(`${ui.month}-${String(day).padStart(2,'0')}`);
+  body=days.filter(d=>eventsOn(d).length).map(d=>`<div class="agenda-group"><div class="agenda-head"><h3>${html(niceDate(d))}</h3>${shiftBadge(d,true)}</div>${eventsOn(d).filter(e=>e.type!=='shift').map(e=>simpleCard(e,true)).join('')||'<p class="muted xs">Nessun altro impegno</p>'}</div>`).join('')||'<div class="empty-state">Nessun evento per il mese.</div>';
+}
+const filtered=eventsOn(ui.date);
+const dayClasses=filtered.filter(e=>e.type!=='shift');
+return `<div class="toolbar"><div class="month-arrows"><button class="btn icon" data-action="month-offset" data-offset="-1" aria-label="Mese precedente">‹</button><button class="btn icon" data-action="month-offset" data-offset="1" aria-label="Mese successivo">›</button><span class="month-title">${html(monthName(ui.month))}</span></div><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><button class="btn sm" data-action="today">Oggi</button><div class="segmented">${[['month','Mese'],['week','Settimana'],['agenda','Elenco']].map(([val,title])=>`<button class="${mode===val?'active':''}" data-action="cal-mode" data-mode="${val}">${title}</button>`).join('')}</div><button class="btn sm" data-action="import-shifts">✦ Carica turni</button><button class="btn primary" data-action="add-event">+ Impegno</button></div></div>
+<div class="filter-row">${Object.keys(LABELS).map(k=>`<button class="filter-btn ${data.filters[k]===false?'off':''}" data-action="toggle-filter" data-filter="${k}"><span class="dot ${k}"></span>${LABELS[k]}</button>`).join('')}<select class="module-select" id="module-filter" aria-label="Filtra per modulo"><option value="">Tutti i moduli</option>${[...new Map(allEvents().filter(lecture).map(e=>[e.module,e.title])).entries()].sort((a,b)=>a[1].localeCompare(b[1])).map(([code,name])=>`<option value="${html(code)}" ${ui.filterModule===code?'selected':''}>${html(name)} (${html(code)})</option>`).join('')}</select></div>
+<div class="turn-calendar-key"><div class="key-left"><strong>Turni in evidenza</strong><span class="key-samples"><b>M</b> mattina · <b>P</b> pomeriggio · <b>N</b> notte · <b>S</b> smonto · <b>R</b> riposo</span><span class="key-note">Tratteggiato = teorico · arancione = da confermare · pieno = confermato</span></div><button class="btn sm" data-action="toggle-projection">${data.projection?'Nascondi':'Mostra'} rotazione teorica</button></div>
+<div class="day-focus"><div class="day-focus-head"><strong>${html(niceDate(ui.date))}</strong>${shiftBadge(ui.date,true)||`<button class="btn sm" data-action="edit-shift" data-date="${html(ui.date)}">+ Turno</button>`}</div><div class="day-focus-events">${dayClasses.length?dayClasses.map(e=>`<button data-action="edit-event" data-id="${html(e.id)}" class="day-focus-event ${html(e.type)}"><b>${html(e.start)}${e.end?'–'+html(e.end):''}</b> ${html(e.title)}</button>`).join(''):'<span class="muted small">Nessuna lezione o esame registrato</span>'}</div></div>${body}<div class="cal-selected card"><div class="section-title"><h2>${html(niceDate(ui.date))}</h2><button class="btn sm" data-action="add-event" data-date="${ui.date}">+ Aggiungi</button></div>${filtered.length?filtered.map(e=>simpleCard(e,true)).join(''):'<div class="empty-state">Nessun impegno registrato per questa giornata.</div>'}</div><div class="footnote">I turni teorici sono tratteggiati. I turni da confermare sono modificabili e identificati in arancione. Tocca il badge per registrare o cambiare il turno. Le date degli esami senza ora di fine non assumono una durata.</div>`;
+}
+function moduleSummaryHTML(r){const pct=r.total?Math.round(r.present/r.total*1000)/10:0;const reach=r.present+r.pending>=r.total*r.threshold-.001;const minNeed=Math.max(0,r.total*r.threshold-r.present);return `<div class="module-detail"><div class="md-item"><div><div class="md-title">${html(r.title)}</div><div class="muted xs">${html(r.module)} · soglia ${Math.round(r.threshold*100)}% · ${r.count} lezioni</div></div>${r.marked?`<span class="tag ${reach?'good':'danger'}">${fmtHours(pct)}%</span>`:'<span class="tag pending">Non segnate</span>'}</div><div class="progress" style="margin:8px 0 5px"><span class="done" style="width:${r.total?100*r.present/r.total:0}%"></span><span class="missed" style="width:${r.total?100*r.absent/r.total:0}%"></span></div><div class="muted xs">${fmtHours(r.present)}/${fmtHours(r.total)} h presenti · ${fmtHours(r.pending)} h da segnare · servono ancora ${fmtHours(minNeed)} h</div><details style="margin-top:9px"><summary style="color:var(--blue);font-size:11px">Segna singole lezioni (${r.count}) ⌄</summary><div style="margin-top:7px">${r.events.sort(eventSort).map(e=>`<div class="md-item"><div>${html(niceDate(e.date,'short'))} ${html(e.start)} · ${fmtHours(duration(e))}h<br>${statusTag(e)}</div><div style="display:flex;gap:4px"><button class="mini-status present" title="Presente" data-action="mark" data-id="${html(e.id)}" data-status="present">✓</button><button class="mini-status absent" title="Assente" data-action="mark" data-id="${html(e.id)}" data-status="absent">✕</button><button class="mini-status" title="Modifica o presenza parziale" data-action="edit-event" data-id="${html(e.id)}">✎</button></div></div>`).join('')}</div></details></div>`;}
+function renderAttendance(){const all=courseSummaries(),total=all.reduce((s,c)=>s+c.total,0),present=all.reduce((s,c)=>s+c.present,0),pending=all.reduce((s,c)=>s+c.pending,0);return `<div class="banner" style="margin-bottom:17px"><strong>Come vengono contate le presenze</strong><br>Una lezione non segnata resta <strong>da verificare</strong>, non assente. I calcoli mostrano il 60% generale, il 75% per il modulo 71034 e un riepilogo per ogni corso integrato. La regola formale di idoneità va sempre confermata con UNIBO.</div><div class="stat-grid" style="margin:0 0 19px"><div class="card stat"><div class="num">${fmtHours(total)} h</div><div class="name">Lezioni programmate</div></div><div class="card stat"><div class="num">${fmtHours(present)} h</div><div class="name">Presenti registrate</div></div><div class="card stat"><div class="num">${fmtHours(pending)} h</div><div class="name">Ancora da segnare</div></div><div class="card stat"><div class="num">${all.length}</div><div class="name">Corsi con orario disponibile</div></div></div><div class="course-list">${all.map(c=>{const pct=c.total?100*c.present/c.total:0;const missing=Math.max(0,c.total*.6-c.present);const permitted=Math.max(0,c.present+c.pending-c.total*.6);return `<div class="card course"><header><div><span class="course-code">${html(c.course)} · ${c.modules.length} moduli</span><h3>${html(courseTitle(c.course))}</h3></div><span class="tag ${c.type}">${c.type==='elective'?'A scelta':'Obbligatorio'}</span></header><div class="course-meta"><span class="chip">${fmtHours(c.total)} h previste</span><span class="chip">${fmtHours(c.present)} h presenti</span></div><div class="progress"><span class="done" style="width:${pct}%"></span><span class="missed" style="width:${c.total?100*c.absent/c.total:0}%"></span></div><div class="cinfo"><span>${c.marked?`${fmtHours(pct)}% registrato`:'Presenze ancora da registrare'}</span><span>${fmtHours(c.pending)} h non segnate</span></div><p class="footnote">Scenario 60% sul corso: servono altre ${fmtHours(missing)} h · margine teorico ${fmtHours(permitted)} h. Alcuni moduli possono avere soglie diverse.</p>${c.modules.map(moduleSummaryHTML).join('')}</div>`;}).join('')}</div><p class="footnote">Alcuni insegnamenti obbligatori non hanno ancora tutti gli orari disponibili e non sono inclusi nei totali orari. Tirocinio: obbligo di frequenza distinto.</p>`;}
+function renderConflicts(){
+const all=calculateConflicts();const real=all.filter(c=>!c.simulated), projected=all.filter(c=>c.simulated);const onlyClasses=real.filter(c=>lecture(c.a)&&lecture(c.b));const hours=onlyClasses.reduce((sum,c)=>sum+(c.hours||0),0);const grouped=new Map();for(const c of all){if(!grouped.has(c.date))grouped.set(c.date,[]);grouped.get(c.date).push(c);}
+return `<div class="banner"><strong>Come leggere questa sezione</strong><br>Le sovrapposizioni sono individuate dagli orari, non dalle tue presenze. I turni teorici vengono segnalati come <strong>simulazioni</strong>. Per esami senza ora di fine, l'app evidenzia solo il possibile conflitto all'inizio, senza inventare una durata.</div><div class="stat-grid" style="margin-bottom:19px"><div class="card stat"><div class="num">${new Set(onlyClasses.map(c=>c.date)).size}</div><div class="name">Giorni in conflitto fra lezioni</div></div><div class="card stat"><div class="num">${fmtHours(hours)} h</div><div class="name">Ore sovrapposte fra lezioni</div></div><div class="card stat"><div class="num">${real.filter(c=>c.a.type==='shift'||c.b.type==='shift').length}</div><div class="name">Conflitti con turni registrati</div></div><div class="card stat"><div class="num">${projected.length}</div><div class="name">Conflitti da simulazioni</div></div></div>
+<div class="heading-block"><div><h2>Giornate con sovrapposizioni</h2><p class="muted small">Confronto automatico fra attività registrate</p></div><button class="btn sm" data-action="tab" data-tab="calendar">Apri calendario</button></div>
+${[...grouped].sort((a,b)=>a[0].localeCompare(b[0])).map(([date,list])=>{const confirmed=list.filter(c=>!c.simulated);const hr=confirmed.filter(c=>lecture(c.a)&&lecture(c.b)).reduce((sum,c)=>sum+(c.hours||0),0);return `<div class="card" style="margin-bottom:12px"><div class="section-title"><h3>${html(niceDate(date))}</h3><div><span class="tag ${confirmed.length?'danger':'pending'}">${hr?fmtHours(hr)+' ore tra lezioni':confirmed.length?'Sovrapposizione nota':'Solo previsione'}</span> <button class="btn sm" data-action="go-date" data-date="${date}">Vedi giorno</button></div></div>${list.map(c=>`<div class="conflict-pair"><div><div style="display:flex;gap:7px;align-items:center;flex-wrap:wrap">${typeTag(c.a)} <strong>${html(c.a.title)}</strong></div><div class="muted xs" style="margin-top:2px">${tRange(c.a)}</div></div><div class="clash-mark">↕</div><div><div style="display:flex;gap:7px;align-items:center;flex-wrap:wrap">${typeTag(c.b)} <strong>${html(c.b.title)}</strong></div><div class="muted xs" style="margin-top:2px">${tRange(c.b)}</div></div><div class="clash-hours">${c.kind==='unknown-exam-end'?'Inizio in sovrapposizione':(fmtHours(c.hours)+' h')}${c.simulated?'<br><small>Simulazione</small>':''}</div></div>`).join('')}</div>`;}).join('')||'<div class="empty-state">Non sono state trovate sovrapposizioni negli eventi attuali.</div>'}<p class="footnote">Lezioni e sedi possono cambiare. Verifica gli aggiornamenti UNIBO e aggiungi i turni ufficiali appena disponibili.</p>`;}
+function renderShifts(){const [y,m]=ui.shiftMonth.split('-').map(Number);const offset=(new Date(y,m-1,1).getDay()+6)%7;const count=new Date(y,m,0).getDate();const boxes=[...Array(offset).fill(null),...Array.from({length:count},(_,i)=>`${ui.shiftMonth}-${String(i+1).padStart(2,'0')}`)];const named=Object.keys(data.shifts).filter(x=>x.slice(0,7)===ui.shiftMonth);return `<div class="notice" style="margin-bottom:17px"><strong>Turnazione ancora da confermare</strong>La sequenza M → N → S → R → P, dal 1° dicembre 2026, è soltanto un'ipotesi. I turni personali vengono importati nel browser e restano modificabili. Puoi caricare altri turni con l’assistente, anche se ancora da confermare.</div><div class="toolbar"><div class="month-arrows"><button class="btn icon" data-action="shift-offset" data-offset="-1">‹</button><button class="btn icon" data-action="shift-offset" data-offset="1">›</button><span class="month-title">${html(monthName(ui.shiftMonth))}</span></div><div style="display:flex;gap:8px"><button class="btn sm" data-action="import-shifts">✦ Assistente turni</button><button class="btn primary" data-action="edit-shift" data-date="${ui.shiftMonth}-01">+ Registra turno</button></div></div><div class="setting-item" style="margin-bottom:14px"><div><strong>Mostra rotazione teorica</strong><p>Solo come simulazione visiva, mai come turni confermati.</p></div><button role="switch" aria-checked="${data.projection}" class="switch ${data.projection?'on':''}" data-action="toggle-projection" aria-label="Mostra turni simulati"></button></div><div class="shift-legend" style="margin-bottom:10px">${[['M','07–14'],['P','13:10–20'],['N','19:40–07'],['L','07–17'],['S','Smonto'],['R','Riposo']].map(([key,v])=>`<span class="chip">${key} · ${v}</span>`).join('')}</div><div class="shift-grid">${boxes.map(d=>{if(!d)return '<div class="shift-box empty"></div>';const s=shiftFor(d);return `<button class="shift-box ${s?s.simulated?'projection':s.tentative?'projection':'confirmed':''} ${d<today()?'past':''}" data-action="edit-shift" data-date="${d}"><strong>${dayNumber(d)}</strong>${s?`<span class="shift-code">${html(s.code)}</span><span class="small muted">${html(shiftStatus(d,s))}</span>`:'<span class="small muted">+ Turno</span>'}</button>`;}).join('')}</div><div class="card section"><div class="section-title"><h2>Turni registrati nel mese</h2><span class="chip">${named.length}</span></div>${named.length?named.sort().map(d=>{const e=shiftFor(d);return `<div class="list-row"><div class="left"><strong>${html(niceDate(d))} · ${html(data.shifts[d].code)}</strong><small>${html(shiftStatus(d,e))} · ${html(data.shifts[d].notes||'')}</small></div><button class="btn sm" data-action="edit-shift" data-date="${d}">Modifica</button></div>`;}).join(''):'<div class="empty-state">Non hai ancora registrato turni per questo mese.</div>'}</div>`;}
+function renderExams(){const e=allEvents().filter(x=>x.type==='exam').sort(eventSort);return `<div class="heading-block"><div><h2>I tuoi esami e preappelli</h2><p class="muted small">Orario di fine facoltativo · stato della prenotazione modificabile</p></div><button class="btn primary" data-action="add-event" data-kind="exam">+ Esame</button></div><div class="exam-grid">${e.map(x=>{const date=dlocal(x.date),book=x.booking==='booked'?'Prenotato':x.booking==='done'?'Sostenuto':x.booking==='not_booked'?'Da prenotare':'Da verificare';return `<div class="card exam-card"><div class="exam-date"><div class="datebox"><strong>${date.getDate()}</strong><span>${MONTHS[date.getMonth()].slice(0,3)} ${date.getFullYear()}</span></div><div><div class="eyebrow">${html(x.examType||'Esame')}</div><h3>${html(x.title)}</h3></div></div><div class="exam-detail"><div>🕒 <b>${html(x.start||'Da definire')}</b> ${x.end?'– '+html(x.end):'· fine non comunicata'}</div><div>📍 ${html(x.room||'Aula da inserire')}</div><div>🗂 ${html(x.module||x.course||'')} · <span class="tag ${x.booking==='booked'?'good':'pending'}">${book}</span></div></div><button class="btn sm" data-action="edit-event" data-id="${html(x.id)}">Modifica esame</button>${x.module==='07234'?'<p class="footnote">L’ora delle 09:00 proviene dalla tua comunicazione: verifica la convocazione personale.</p>':''}</div>`;}).join('')}</div>${e.length?'':'<div class="empty-state">Nessun esame registrato.</div>'}<div class="section"><div class="notice"><strong>Promemoria personale</strong>Puoi gestire prenotazione, sede e ora direttamente dalle schede. Il file funziona offline: non invia notifiche push quando il browser è chiuso. Puoi esportare gli eventi in formato .ics per aggiungerli al calendario del telefono.</div></div>`;}
+function renderSettings(){const backups=JSON.stringify(data).length;return `<div class="setting-rows"><div class="setting-item"><div><strong>Esporta backup</strong><p>Salva tutte le presenze, gli eventi personalizzati, le modifiche e i turni inseriti.</p></div><button class="btn primary" data-action="export-backup">Scarica JSON</button></div><div class="setting-item"><div><strong>Ripristina un backup</strong><p>Se cambi telefono o browser, importa il file JSON esportato in precedenza. Sovrascriverà i dati locali.</p></div><label class="btn" for="backup-file">Importa JSON</label><input class="sr-only" id="backup-file" type="file" accept="application/json,.json"></div><div class="setting-item"><div><strong>Esporta calendario</strong><p>Lezioni, esami e turni confermati in formato .ics per Apple Calendar, Google Calendar o Outlook.</p></div><button class="btn" data-action="export-ics">Scarica .ics</button></div><div class="setting-item"><div><strong>Mostra turni simulati</strong><p>La rotazione dal 1° dicembre è una previsione, non una conferma.</p></div><button role="switch" aria-checked="${data.projection}" class="switch ${data.projection?'on':''}" data-action="toggle-projection" aria-label="Mostra rotazione simulata"></button></div><div class="setting-item"><div><strong>Ripristina lezioni nascoste e modifiche</strong><p>Riporta gli eventi universitari originali alla versione iniziale senza cancellare presenze o turni.</p></div><button class="btn" data-action="reset-events">Ripristina</button></div><div class="setting-item"><div><strong>Elimina tutti i dati personali salvati</strong><p>Rimuove ogni presenza, turno e modifica locale. Gli orari UNIBO iniziali restano nel file.</p></div><button class="btn danger" data-action="reset-all">Cancella dati</button></div></div>
+<div class="card section"><div class="section-title"><h2>Informazioni sul calendario</h2></div><div class="list-row"><div class="left"><strong>Orari iniziali</strong><small>${seed.events.length} lezioni UNIBO + ${seed.exams.length} esami personali</small></div><span class="tag good">Incorporati</span></div><div class="list-row"><div class="left"><strong>Esami personali</strong><small>Vengono aggiunti e gestiti esclusivamente nel tuo calendario privato.</small></div><span class="tag pending">Privati</span></div><div class="list-row"><div class="left"><strong>Dati salvati su questo dispositivo</strong><small>Circa ${(backups/1024).toFixed(1)} KB · nessun account necessario</small></div><span class="tag pending">Locale</span></div><div class="list-row"><div class="left"><strong>Insegnamenti senza orari completi</strong><small>Educazione e promozione della salute; Processi di programmazione e integrazione organizzativa</small></div><span class="tag pending">Da integrare</span></div></div><p class="footnote">Versione ${html(seed.version)} · I dati delle lezioni derivano dal calendario UNIBO raccolto il 15 novembre 2026 e possono subire variazioni. Verifica sempre le comunicazioni ufficiali. Questa versione offline non effettua sincronizzazione automatica fra dispositivi.</p>`;}
+function renderModal(){const root=document.getElementById('modal-root');if(!ui.modal){root.replaceChildren();return;}
+const m=ui.modal;if(m.type==='shift-bulk'){
+root.innerHTML=`<div class="modal-wrap" data-action="close-overlay"><div class="modal import-modal" role="dialog" aria-modal="true" aria-labelledby="modaltitle"><div class="modal-head"><div><div class="eyebrow">Assistente importazione</div><h2 id="modaltitle">✦ Carica i turni</h2></div><button class="btn icon" data-action="close-modal" aria-label="Chiudi">✕</button></div>
+<div class="import-lead">Incolla il calendario turni o carica un file. L'assistente riconosce date e codici, poi ti lascia <strong>verificare e modificare ogni turno prima di salvarlo</strong>. Nessuna data viene confermata automaticamente.</div>
+<form id="shift-bulk-form">
+<div class="import-steps"><span>1 · Carica</span><span>2 · Controlla</span><span>3 · Salva</span></div>
+<div class="import-grid"><div class="field"><label for="import-month">Mese di riferimento</label><input id="import-month" name="month" type="month" value="${html(ui.shiftMonth)}"></div><div class="field"><label for="import-default-status">Stato iniziale</label><select name="defaultStatus" id="import-default-status"><option value="pending" selected>Da confermare</option><option value="recorded">Registrato, da verificare</option><option value="confirmed">Confermato</option></select></div></div>
+<div class="field"><label for="shift-upload">Foto, screenshot, PDF, CSV, TXT o calendario .ics</label><input type="file" id="shift-upload" accept="image/*,.pdf,.csv,.txt,.ics,application/pdf,text/csv,text/plain,text/calendar" aria-describedby="shift-file-note"><p class="xs muted" id="shift-file-note">Foto e PDF scansionati: lettura OCR nel browser, con connessione necessaria per caricare il motore OCR la prima volta. I file non vengono inviati a un nostro server.</p></div>
+<div class="field"><label for="shift-bulk">Testo turni (puoi correggerlo prima dell'analisi)</label><textarea id="shift-bulk" name="lines" rows="7" placeholder="16 novembre N\n17 S\n18 R\n26/11 PERM permesso richiesto\n27/11 L cambio in attesa"></textarea><p class="xs muted">Accetta anche «2026-11-16 N», «16/11 N», «lun 16 notte», CSV con data e turno. Le righe non riconosciute vengono segnalate.</p></div>
+<div id="shift-assistant-status" aria-live="polite" class="import-status">Pronto per analizzare i turni.</div>
+<div class="import-actions"><button type="button" class="btn primary" data-action="analyze-shifts">✦ Analizza i turni</button><button type="button" class="btn" data-action="load-import-example">Mostra esempio</button></div>
+<div id="shift-import-preview"></div>
+<div class="modal-foot"><button type="button" class="btn" data-action="close-modal">Annulla</button><button type="submit" id="save-import-shifts" class="btn primary" disabled>Salva turni verificati</button></div>
+</form></div></div>`;
+if(ui.importDraft?.length)renderImportPreview();return;}
+if(m.type==='shift'){const d=m.date||today();const savedShift=data.shifts[d];const projection=shiftFor(d);const code=savedShift?.code||projection?.code||'M';root.innerHTML=`<div class="modal-wrap" data-action="close-overlay"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modaltitle"><div class="modal-head"><h2 id="modaltitle">${savedShift?'Modifica turno':'Registra turno'}</h2><button class="btn icon" data-action="close-modal" aria-label="Chiudi">✕</button></div><form id="shift-form"><div class="form-grid"><div class="field"><label for="shift-date">Data</label><input id="shift-date" name="date" type="date" value="${html(d)}" required></div><div class="field"><label for="shift-code">Tipo di turno</label><select id="shift-code" name="code">${[['M','Mattina (07–14)'],['P','Pomeriggio (13:10–20)'],['N','Notte (19:40–07)'],['S','Smonto'],['R','Riposo'],['L','Lunga (07–17)'],['MREP','Mattina + reperibilità notte'],['F','Ferie'],['PERM','Permesso'],['ALTRO','Altro']].map(([v,n])=>`<option value="${v}" ${v===code?'selected':''}>${n}</option>`).join('')}</select></div><div class="field full"><label for="shift-note">Note</label><textarea id="shift-note" name="notes" placeholder="Collega, cambio turno, reparto...">${html(savedShift?.notes||'')}</textarea></div><div class="field full"><label for="shift-status">Stato del turno</label><select id="shift-status" name="status">${[['recorded','Registrato (da verificare)'],['pending','In attesa di conferma / cambio richiesto'],['confirmed','Confermato dal lavoro']].map(([v,n])=>`<option value="${v}" ${v===shiftRecordStatus(savedShift)?'selected':''}>${n}</option>`).join('')}</select><p class="xs muted">Puoi modificare anche i turni ancora in attesa, senza cancellarli.</p></div></div><p id="shift-save-error" aria-live="assertive" role="alert" style="display:none;margin:0 20px 12px;color:#bc2d2d;font-size:13px;font-weight:600"></p><div class="modal-foot">${savedShift?`<button class="btn danger" type="button" data-action="delete-shift" data-date="${html(d)}">Elimina turno</button>`:''}<button class="btn" type="button" data-action="close-modal">Annulla</button><button class="btn primary" type="button" data-action="commit-shift">Salva turno</button></div></form></div></div>`;return;}
+let e=m.id?byId(m.id):null;const isNew=!e;const dt=m.date||ui.date||today();const kind=e?.type||m.kind||'exam';const h=e?duration(e):null;const a=e?attendance(e):{status:'unset',hours:0};root.innerHTML=`<div class="modal-wrap" data-action="close-overlay"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modaltitle"><div class="modal-head"><h2 id="modaltitle">${isNew?'Nuovo impegno':'Modifica impegno'}</h2><button class="btn icon" data-action="close-modal" aria-label="Chiudi">✕</button></div><form id="event-form"><input type="hidden" name="id" value="${html(e?.id||'')}"><div class="form-grid"><div class="field full"><label>Tipo di impegno</label><select id="event-type" name="type">${[['exam','Esame / preappello'],['mandatory','Lezione obbligatoria'],['elective','Lezione a scelta'],['custom','Impegno personale']].map(([val,name])=>`<option value="${val}" ${val===kind?'selected':''}>${name}</option>`).join('')}</select></div><div class="field full"><label for="event-title">Titolo</label><input id="event-title" name="title" value="${html(e?.title||'')}" required placeholder="Nome materia o evento"></div><div class="field"><label for="event-date">Data</label><input id="event-date" name="date" type="date" value="${html(e?.date||dt)}" required></div><div class="field"><label for="event-module">Codice modulo (facoltativo)</label><input id="event-module" name="module" value="${html(e?.module||'')}" placeholder="es. 07234"></div><div class="field"><label for="event-start">Ora di inizio</label><input id="event-start" name="start" type="time" value="${html(e?.start||'12:00')}" required></div><div class="field"><label for="event-end">Ora fine (facoltativa per esami)</label><input id="event-end" name="end" type="time" value="${html(e?.end||'')}"></div><div class="field full"><label for="event-room">Aula o luogo</label><input id="event-room" name="room" value="${html(e?.room||'')}" placeholder="Aula, edificio, indirizzo..."></div><div class="field full"><label for="event-notes">Note</label><textarea name="notes" id="event-notes" placeholder="Informazioni e promemoria">${html(e?.notes||'')}</textarea></div><div class="field" id="booking-field" ${kind==='exam'?'':'hidden'}><label for="event-booking">Stato prenotazione</label><select name="booking" id="event-booking">${[['unknown','Da verificare'],['not_booked','Da prenotare'],['booked','Prenotato'],['done','Sostenuto']].map(([v,n])=>`<option value="${v}" ${v===(e?.booking||'unknown')?'selected':''}>${n}</option>`).join('')}</select></div><div class="field" id="attendance-field" ${!isNew&&lecture(e)?'':'hidden'}><label for="event-attendance">Frequenza</label><select name="attendanceStatus" id="event-attendance">${[['unset','Da segnare'],['present','Presente'],['absent','Assente'],['partial','Presenza parziale']].map(([v,n])=>`<option value="${v}" ${v===a.status?'selected':''}>${n}</option>`).join('')}</select></div><div class="field" id="partial-field" ${a.status==='partial'&&!isNew?'':'hidden'}><label for="event-partial">Ore frequentate (max ${fmtHours(h)} h)</label><input name="partialHours" id="event-partial" type="number" min="0" step="0.5" max="${h??24}" value="${a.hours||0}"></div></div><div class="modal-foot">${!isNew?`<button class="btn danger" type="button" data-action="delete-event" data-id="${html(e.id)}">Elimina evento</button>`:''}<button class="btn" type="button" data-action="close-modal">Annulla</button><button class="btn primary" type="submit">Salva</button></div></form></div></div>`;}
+
+// Intelligent local import: conservative parser; every recognized shift must be reviewed before saving.
+const MONTH_NUMBERS={gennaio:1,febbraio:2,marzo:3,aprile:4,maggio:5,giugno:6,luglio:7,agosto:8,settembre:9,ottobre:10,novembre:11,dicembre:12};
+const CODE_ALIASES={M:'M',MATTINA:'M',P:'P',POMERIGGIO:'P',N:'N',NOTTE:'N',S:'S',SMONTO:'S',R:'R',RIPOSO:'R',L:'L',LUNGA:'L',F:'F',FERIE:'F',PERM:'PERM',PERMESSO:'PERM',MREP:'MREP',REPERIBILITA:'MREP',ALTRO:'ALTRO'};
+function validDate(d){if(!/^\d{4}-\d{2}-\d{2}$/.test(d))return false;return iso(dlocal(d))===d;}
+function normalizeShiftCode(raw){let x=String(raw||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase().replace(/[^A-Z]/g,'');return CODE_ALIASES[x]||null;}
+function parseShiftText(raw,month){
+const [defaultY,defaultM]=(month||'2026-11').split('-').map(Number);
+const results=[],errors=[];const lines=String(raw||'').replace(/\r/g,'').split('\n');
+const aliases='MREP|PERM|ALTRO|MATTINA|POMERIGGIO|NOTTE|SMONTO|RIPOSO|LUNGA|FERIE|PERMESSO|REPERIBILITÀ|REPERIBILITA|M|P|N|S|R|L|F';
+const codePart=new RegExp('^\\s*[-:,;|\\s]*('+aliases+')(?![A-Za-zÀ-ÿ])','i');const datePart=/(?:\b\d{4}-\d{1,2}-\d{1,2}\b|\b\d{1,2}[\/.\-]\d{1,2}(?:[\/.\-]\d{2,4})?\b|\b\d{1,2}\s+(?:gennaio|febbraio|marzo|aprile|maggio|giugno|luglio|agosto|settembre|ottobre|novembre|dicembre)\b|\b\d{1,2}\b)/gi;
+function dateFrom(x){let m=String(x).trim().match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);let y=defaultY,mo=defaultM,day=0;if(m){y=+m[1];mo=+m[2];day=+m[3];}else if(m=String(x).trim().match(/^(\d{1,2})[\/.\-](\d{1,2})(?:[\/.\-](\d{2,4}))?$/)){day=+m[1];mo=+m[2];if(m[3])y=+m[3]<100?2000+(+m[3]):(+m[3]);}else if(m=String(x).trim().match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)$/i)){day=+m[1];mo=MONTH_NUMBERS[m[2].toLowerCase()]||defaultM;}else if(/^\d{1,2}$/.test(String(x).trim()))day=+x;
+const d=`${y}-${String(mo).padStart(2,'0')}-${String(day).padStart(2,'0')}`;return validDate(d)?d:null;}
+for(let n=0;n<lines.length;n++){
+  const line=lines[n].trim();if(!line||/^(data|giorno|day|turno|codice|date|mese|orario|note)(\s|\||,|;|$)/i.test(line))continue;
+  // Extract one or more (date, code) pairs from the line; never infer missing codes.
+  const hits=[...line.matchAll(datePart)];let found=0;
+  for(let i=0;i<hits.length;i++){
+    const hit=hits[i];const after=line.slice(hit.index+hit[0].length,(hits[i+1]?.index)||line.length);
+    const codeMatch=after.match(codePart);if(!codeMatch)continue;
+    const date=dateFrom(hit[0]);const code=normalizeShiftCode(codeMatch[1]);if(!date||!code)continue;
+    const notes=after.slice(codeMatch[0].length).replace(/^[,;:\s|–-]+/,'').trim();
+    let status=/\b(confermat[oaie]|ufficiale)\b/i.test(notes)?'confirmed':/\b(attesa|richiest[oa]|provvisorio|confermare|cambio)\b/i.test(notes)?'pending':null;
+    results.push({date,code,notes,status,sourceLine:n+1});found++;
+  }
+  if(!found && /\d/.test(line) && !/^\s*\/\//.test(line))errors.push({line:n+1,text:line.slice(0,110)});
+}
+const dedup=new Map();for(const row of results)dedup.set(row.date,row);return {rows:[...dedup.values()].sort((a,b)=>a.date.localeCompare(b.date)),errors,duplicates:results.length-dedup.size};
+}
+function setAssistantStatus(message,kind='info'){const e=document.getElementById('shift-assistant-status');if(e){e.textContent=message;e.dataset.kind=kind;}}
+function renderImportPreview(){const el=document.getElementById('shift-import-preview');if(!el)return;const rows=ui.importDraft||[];const errors=ui.importErrors||[];const saveBtn=document.getElementById('save-import-shifts');if(saveBtn)saveBtn.disabled=!rows.length;
+el.innerHTML=rows.length?`<div class="import-preview-head"><strong>2 · Verifica i ${rows.length} turni riconosciuti</strong><span class="chip">Nessuna modifica salvata</span></div><div class="import-preview-scroll"><table class="import-preview-table"><thead><tr><th>Data</th><th>Turno</th><th>Stato</th><th>Note</th><th></th></tr></thead><tbody>${rows.map((r,i)=>`<tr><td><input aria-label="Data turno ${i+1}" type="date" name="importDate${i}" value="${html(r.date)}" required></td><td><select aria-label="Codice turno ${i+1}" name="importCode${i}">${Object.keys(SHIFT_LABELS).map(k=>`<option value="${k}" ${k===r.code?'selected':''}>${k}</option>`).join('')}</select></td><td><select aria-label="Stato turno ${i+1}" name="importStatus${i}">${[['pending','Da confermare'],['recorded','Registrato'],['confirmed','Confermato']].map(([k,v])=>`<option value="${k}" ${k===(r.status||ui.importDefaultStatus||'pending')?'selected':''}>${v}</option>`).join('')}</select></td><td><input aria-label="Note turno ${i+1}" name="importNotes${i}" value="${html(r.notes||'')}" placeholder="Facoltative"></td><td><button class="btn sm" type="button" data-action="remove-import-row" data-index="${i}" aria-label="Rimuovi riga ${i+1}">✕</button></td></tr>`).join('')}</tbody></table></div><label class="import-overwrite"><input type="checkbox" name="overwrite"> Sovrascrivi turni già registrati nelle stesse date (altrimenti li preservo)</label>`:'';
+if(errors.length)el.innerHTML+=`<details class="import-warning" open><summary>⚠ ${errors.length} righe non riconosciute: controllale nel testo</summary><ul>${errors.slice(0,20).map(e=>`<li>Riga ${e.line}: ${html(e.text)}</li>`).join('')}</ul></details>`;
+}
+function readLocalShiftFile(file){const type=String(file?.type||'');const name=String(file?.name||'').toLowerCase();setAssistantStatus('Lettura di '+file.name+'…');
+const finish=text=>{const el=document.getElementById('shift-bulk');if(el){el.value=String(text||'').trim();ui.importDraft=[];ui.importErrors=[];document.getElementById('shift-import-preview').innerHTML='';document.getElementById('save-import-shifts').disabled=true;setAssistantStatus('Testo estratto da '+file.name+'. Premi “Analizza i turni” e verifica il risultato.','success');}};
+if(type.startsWith('image/')||/\.(png|jpg|jpeg|webp|bmp)$/.test(name)){loadShiftScript('https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',()=>!!window.Tesseract).then(()=>window.Tesseract.recognize(file,'ita+eng',{logger:({status,progress})=>{if(status)setAssistantStatus('OCR: '+status+(progress?' · '+Math.round(progress*100)+'%':''));}})).then(result=>finish(result.data.text)).catch(()=>setAssistantStatus('Impossibile leggere la foto. Serve una connessione per il motore OCR; puoi incollare i turni come testo.','error'));return;}
+if(type.includes('pdf')||name.endsWith('.pdf')){loadShiftScript('https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js',()=>!!window.pdfjsLib).then(async()=>{window.pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';const pdf=await window.pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer())}).promise;const pages=[];for(let p=1;p<=Math.min(10,pdf.numPages);p++){setAssistantStatus('Lettura PDF: pagina '+p+' di '+pdf.numPages);const content=await(await pdf.getPage(p)).getTextContent();let lastY=null,out='';for(const item of content.items){const y=Math.round(item.transform?.[5]||0);if(lastY!==null&&Math.abs(y-lastY)>3)out+='\n';else if(out)out+=' ';out+=item.str;lastY=y;}pages.push(out);}const extracted=pages.join('\n').trim();if(extracted.length>12){finish(extracted);return;}setAssistantStatus('Il PDF sembra una scansione; avvio OCR sulle prime pagine (serve internet per i modelli).');await loadShiftScript('https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js',()=>!!window.Tesseract);const scans=[];for(let i=1;i<=Math.min(5,pdf.numPages);i++){const page=await pdf.getPage(i);const viewport=page.getViewport({scale:1.65});const canvas=document.createElement('canvas');canvas.width=viewport.width;canvas.height=viewport.height;await page.render({canvasContext:canvas.getContext('2d'),viewport}).promise;const res=await window.Tesseract.recognize(canvas,'ita+eng');scans.push(res.data.text);}finish(scans.join('\n'));}).catch(()=>setAssistantStatus('Impossibile leggere il PDF qui. Prova con testo, CSV o uno screenshot.','error'));return;}
+file.text().then(text=>{if(!name.endsWith('.ics')){finish(text);return;}const shifts=[];for(const block of text.split('BEGIN:VEVENT').slice(1)){const d=block.match(/DTSTART[^:\n]*:(\d{4})(\d{2})(\d{2})/i),sum=block.match(/SUMMARY[^:\n]*:([^\n]+)/i);if(!d||!sum)continue;const tokens=sum[1].replace(/\\,/g,',').match(/[A-Za-zÀ-ÿ]+/g)||[];const code=tokens.map(normalizeShiftCode).find(Boolean);if(code)shifts.push(`${d[1]}-${d[2]}-${d[3]} ${code} ${sum[1]}`);}finish(shifts.join('\n'));if(!shifts.length)setAssistantStatus('Nessun turno identificato nell’ICS. Puoi incollare il calendario come testo.','error');}).catch(()=>setAssistantStatus('Formato file non leggibile.','error'));
+}
+function loadShiftScript(src,available){if(available())return Promise.resolve();return new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=src;script.async=true;script.onload=resolve;script.onerror=reject;document.head.appendChild(script);});}
+function changeTab(key){if(!NAV.some(x=>x[0]===key))return;ui.tab=key;render();window.scrollTo(0,0);}
+function downloadText(filename,content,type){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function exportBackup(){downloadText('uni-e-turni-backup-'+today()+'.json',JSON.stringify({app:'Uni & Turni',version:1,exportedAt:new Date().toISOString(),state:data},null,2),'application/json');notify('Backup JSON esportato.');}
+function icsEscape(s){return String(s||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;');}
+function icsDate(d,t){return d.replace(/-/g,'')+'T'+(t||'00:00').replace(':','')+'00';}
+function exportICS(){const events=allEvents().concat(Object.keys(data.shifts).map(shiftFor).filter(e=>e&&shiftStatus(e.date,e)==='Confermato'));let out=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Uni e Turni//Offline App//IT','CALSCALE:GREGORIAN','METHOD:PUBLISH'];for(const e of events){const d=e.date;if(!d||!e.start)continue;out.push('BEGIN:VEVENT','UID:'+icsEscape(e.id)+'@uni-e-turni','DTSTAMP:'+new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'').replace('Z','Z'),'DTSTART;TZID=Europe/Rome:'+icsDate(d,e.start));if(e.end)out.push('DTEND;TZID=Europe/Rome:'+icsDate(e.endDate||d,e.end));out.push('SUMMARY:'+icsEscape(e.title),'DESCRIPTION:'+icsEscape(e.notes||''));if(e.room)out.push('LOCATION:'+icsEscape(e.room));out.push('END:VEVENT');}out.push('END:VCALENDAR');downloadText('uni-e-turni-calendario-'+today()+'.ics',out.join('\r\n'),'text/calendar;charset=utf-8');notify('Calendario .ics esportato (senza turni simulati).');}
+function clearModal(){ui.modal=null;renderModal();}
+function commitShift(){
+ const formEl=document.getElementById('shift-form');
+ if(!formEl)return;
+ const f=new FormData(formEl);
+ const date=String(f.get('date')||'');
+ const code=String(f.get('code')||'');
+ const status=String(f.get('status')||'recorded');
+ const notes=String(f.get('notes')||'');
+ const errorEl=document.getElementById('shift-save-error');
+ const warn=(msg)=>{if(errorEl){errorEl.textContent=msg;errorEl.style.display='block';}notify(msg);};
+ if(!validDate(date)){warn('Inserisci una data valida per il turno.');return;}
+ if(!Object.prototype.hasOwnProperty.call(SHIFT_LABELS,code)){warn('Scegli un tipo di turno valido.');return;}
+ if(!['recorded','pending','confirmed'].includes(status)){warn('Scegli uno stato del turno valido.');return;}
+ const originalDate=ui.modal?.date;
+ if(originalDate&&date!==originalDate&&data.shifts[date]){
+  if(!confirm('La data '+date+' ha già un turno registrato. Vuoi sostituirlo?'))return;
+ }
+ const previous=data.shifts;
+ const next={...previous};
+ if(originalDate&&originalDate!==date)delete next[originalDate];
+ next[date]={...(next[date]||{}),code,status,confirmed:status==='confirmed',notes,origin:'manual-edit',editedAt:new Date().toISOString()};
+ data.shifts=next;
+ if(!save()){
+  data.shifts=previous;
+  warn('Non è stato possibile conservare questo cambio turno. Nessuna modifica è stata applicata. Controlla il salvataggio locale del browser o usa un backup JSON.');
+  return;
+ }
+ ui.date=date;
+ ui.month=date.slice(0,7);
+ ui.shiftMonth=date.slice(0,7);
+ clearModal();
+ render();
+ notify('✓ Turno salvato sul dispositivo; sincronizzazione cloud in corso.');
+}
+function handleClick(e){const t=e.target.closest('[data-action]');if(!t)return;if(t.dataset.action==='close-overlay'&&e.target===t){clearModal();return;}const act=t.dataset.action;
+if(act==='tab'){changeTab(t.dataset.tab);return;}
+if(act==='month-offset'){ui.month=addMonths(ui.month,Number(t.dataset.offset));const day=Number(ui.date.slice(8,10));const [yy,mm]=ui.month.split('-').map(Number);const maxDay=new Date(yy,mm,0).getDate();ui.date=ui.month+'-'+String(Math.min(day,maxDay)).padStart(2,'0');render();return;}
+if(act==='shift-offset'){ui.shiftMonth=addMonths(ui.shiftMonth,Number(t.dataset.offset));render();return;}
+if(act==='today'){ui.date=today();ui.month=today().slice(0,7);render();return;}
+if(act==='select-date'){ui.date=t.dataset.date;ui.month=ui.date.slice(0,7);render();return;}
+if(act==='cal-mode'){data.calendarMode=t.dataset.mode;save();render();return;}
+if(act==='toggle-filter'){data.filters[t.dataset.filter]=!(data.filters[t.dataset.filter]!==false);save();render();return;}
+if(act==='toggle-projection'){data.projection=!data.projection;save();render();return;}
+if(act==='mark'){setAttendance(t.dataset.id,t.dataset.status);return;}
+if(act==='import-shifts'){if(ui.tab==='calendar')ui.shiftMonth=ui.month;ui.importDraft=[];ui.importErrors=[];ui.importDefaultStatus='pending';ui.modal={type:'shift-bulk'};renderModal();return;}
+if(act==='load-import-example'){document.getElementById('shift-bulk').value='16 novembre N\n17 S\n18 R\n26/11 PERM permesso richiesto\n27/11 L cambio in attesa';return;}
+if(act==='analyze-shifts'){const raw=document.getElementById('shift-bulk')?.value||'';const mon=document.getElementById('import-month')?.value||ui.shiftMonth;const parsed=parseShiftText(raw,mon);ui.importDraft=parsed.rows;ui.importErrors=parsed.errors;ui.importDefaultStatus=document.getElementById('import-default-status')?.value||'pending';renderImportPreview();setAssistantStatus(parsed.rows.length?`${parsed.rows.length} turni riconosciuti${parsed.duplicates?', '+parsed.duplicates+' duplicati nel testo':''}; ${parsed.errors.length} righe da verificare. Controlla ogni riga prima di salvare.`:'Non ho riconosciuto date e turni. Controlla formato e mese, oppure correggi il testo. ',parsed.rows.length?'success':'error');return;}
+if(act==='remove-import-row'){ui.importDraft.splice(Number(t.dataset.index),1);renderImportPreview();setAssistantStatus(ui.importDraft.length+' turni pronti per il controllo.');return;}
+if(act==='go-date'){ui.date=t.dataset.date;ui.month=ui.date.slice(0,7);changeTab('calendar');return;}
+if(act==='edit-shift'){ui.modal={type:'shift',date:t.dataset.date || (t.dataset.id||'').replace(/^(projection-|shift-)/,'')};renderModal();return;}
+if(act==='commit-shift'){commitShift();return;}
+if(act==='add-event'){ui.modal={type:'event',date:t.dataset.date||ui.date,kind:t.dataset.kind||'exam'};renderModal();return;}
+if(act==='edit-event'){if(!byId(t.dataset.id))return;ui.modal={type:'event',id:t.dataset.id};renderModal();return;}
+if(act==='close-modal'){clearModal();return;}
+if(act==='delete-event'){if(!confirm('Eliminare questo impegno dal calendario?'))return;const id=t.dataset.id;if(id.startsWith('custom-'))data.customEvents=data.customEvents.filter(e=>e.id!==id);else if(!data.deletedIds.includes(id))data.deletedIds.push(id);delete data.attendance[id];save();clearModal();render();notify('Evento rimosso.');return;}
+if(act==='delete-shift'){const prev=data.shifts;const next={...prev};delete next[t.dataset.date];data.shifts=next;if(!save()){data.shifts=prev;notify('Eliminazione non salvata: controlla la memoria del browser.');return;}clearModal();render();notify('Turno rimosso e modifica verificata.');return;}
+if(act==='export-backup'){exportBackup();return;}
+if(act==='export-ics'){exportICS();return;}
+if(act==='reset-events'){if(!confirm('Ripristinare gli eventi UNIBO iniziali? Presenze e turni resteranno invariati.'))return;data.patches={};data.deletedIds=[];save();render();notify('Eventi originali ripristinati.');return;}
+if(act==='reset-all'){if(!confirm('Cancellare tutte le modifiche e i dati salvati in questo browser?'))return;data=DEFAULT_STATE();save();render();notify('Dati locali cancellati.');return;}}
+function handleSubmit(ev){if(ev.target.getAttribute('id')==='shift-bulk-form'){
+ ev.preventDefault();const form=new FormData(ev.target);const draft=ui.importDraft||[];
+ if(!draft.length){notify('Prima analizza il testo o il file.');return;}
+ const rows=[],dates=new Set();for(let i=0;i<draft.length;i++){
+ const date=String(form.get('importDate'+i)||''),code=String(form.get('importCode'+i)||''),status=String(form.get('importStatus'+i)||'pending'),notes=String(form.get('importNotes'+i)||'').trim();
+ if(!validDate(date)||!SHIFT_LABELS[code]||!['pending','recorded','confirmed'].includes(status)){notify('Controlla la riga '+(i+1));return;}
+ if(dates.has(date)){notify('Data duplicata nella revisione: '+date);return;}dates.add(date);rows.push({date,code,status,confirmed:status==='confirmed',notes});
+ }
+ const overwrite=form.get('overwrite')==='on';const exists=rows.filter(r=>data.shifts[r.date]);const imported=rows.filter(r=>overwrite||!data.shifts[r.date]);
+ if(!imported.length){notify('Tutte le date sono già registrate. Abilita la sovrascrittura solo se vuoi modificarle.');return;}
+ if(!confirm(`Salvare ${imported.length} turni? ${exists.length&&!overwrite?exists.length+' turni già presenti resteranno invariati.':overwrite&&exists.length?exists.length+' turni esistenti verranno sovrascritti.':''}`))return;
+ const previousShifts=data.shifts;const nextShifts={...previousShifts};
+ for(const row of imported)nextShifts[row.date]={...nextShifts[row.date],code:row.code,status:row.status,confirmed:row.confirmed,notes:row.notes,origin:'assistant-import'};
+ data.shifts=nextShifts;
+ if(!save()){data.shifts=previousShifts;notify('Importazione non salvata: il browser non conserva le modifiche. Nessun turno è stato cambiato.');return;}clearModal();render();notify(imported.length+' turni salvati sul dispositivo; sincronizzazione cloud in corso.');return;}
+if(ev.target.getAttribute('id')==='shift-form'){ev.preventDefault();commitShift();return;}
+if(ev.target.getAttribute('id')==='event-form'){ev.preventDefault();const f=new FormData(ev.target);const id=String(f.get('id')||''),type=String(f.get('type')),date=String(f.get('date')),start=String(f.get('start')),end=String(f.get('end')||'');if(!date||!start||!String(f.get('title')).trim()){notify('Compila nome, data e ora.');return;}if(end && min(end)<=min(start)){notify('L’ora di fine deve essere successiva all’inizio.');return;}if((type==='mandatory'||type==='elective')&&!end){notify('Per le lezioni inserisci anche l’ora di fine.');return;}
+const next={date,start,end:end||null,type,title:String(f.get('title')||'').trim(),module:String(f.get('module')||'').trim(),room:String(f.get('room')||'').trim(),notes:String(f.get('notes')||'').trim(),booking:String(f.get('booking')||'unknown')};
+if(id&&byId(id)){if(id.startsWith('custom-')){const ix=data.customEvents.findIndex(e=>e.id===id);if(ix>=0)data.customEvents[ix]={...data.customEvents[ix],...next};}else data.patches[id]={...(data.patches[id]||{}),...next};}
+else {const newId='custom-'+Date.now()+'-'+Math.floor(Math.random()*1e5);data.customEvents.push({id:newId,...next,course:next.module||'',verified:false});}
+if(id&&lecture(byId(id))){const status=f.get('attendanceStatus')||'unset';if(status==='unset')delete data.attendance[id];else data.attendance[id]={status,hours:status==='present'?Math.max(0,Number(duration(byId(id)))||0):status==='partial'?Number(f.get('partialHours'))||0:0};}
+save();clearModal();render();notify('Impegno salvato.');return;}}
+function handleChange(ev){if(ev.target.id==='shift-upload'){const f=ev.target.files?.[0];if(f)readLocalShiftFile(f);return;}
+if(ev.target.id==='event-type'){const isExam=ev.target.value==='exam';document.getElementById('booking-field').hidden=!isExam;const status=document.getElementById('attendance-field');if(status)status.hidden=(isExam||ev.target.value==='custom'||!ui.modal?.id);}
+if(ev.target.id==='event-attendance'){document.getElementById('partial-field').hidden=ev.target.value!=='partial';}
+if(ev.target.id==='module-filter'){ui.filterModule=ev.target.value||null;render();return;}
+if(ev.target.id==='backup-file'){const file=ev.target.files?.[0];if(!file)return;const rd=new FileReader();rd.onload=()=>{try{const obj=JSON.parse(rd.result);if(obj.app!=='Uni & Turni'||!obj.state||!Array.isArray(obj.state.customEvents)||!obj.state.patches||!obj.state.attendance||!obj.state.shifts)throw new Error('Formato non riconosciuto');if(!confirm('Importare il backup? Sostituirà tutte le modifiche locali.'))return;data=Object.assign(DEFAULT_STATE(),obj.state);if(!obj.state.novemberImported){for(const [d,turn] of Object.entries(NOVEMBER_SHIFTS)){if(!Object.prototype.hasOwnProperty.call(data.shifts,d))data.shifts[d]={...turn};}data.novemberImported=true;}save();render();notify('Backup importato, turni di novembre preservati.');}catch(err){notify('Impossibile importare il file: formato non valido.');}};rd.readAsText(file);ev.target.value='';}}
+document.addEventListener('click',handleClick);document.addEventListener('submit',handleSubmit);document.addEventListener('change',handleChange);document.addEventListener('keydown',e=>{if(e.key==='Escape'&&ui.modal)clearModal();if((e.key==='Enter'||e.key===' ')&&e.target.dataset?.action==='select-date'){e.preventDefault();ui.date=e.target.dataset.date;ui.month=ui.date.slice(0,7);render();}});
+render();
+</script><script src="./auth-sync.js"></script></body></html>
